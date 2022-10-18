@@ -2,9 +2,7 @@
   "version": "2",
   "templates": [
     {
-      "categories": [
-        "Other"
-      ],
+      "categories": ["Other"],
       "description": "AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.",
       "env": [
         {
@@ -87,9 +85,7 @@
           "description": "Set a custom config file."
         }
       ],
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -99,9 +95,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Music"
-      ],
+      "categories": ["Music"],
       "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
       "env": [
         {
@@ -129,9 +123,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/airsonic-logo.png",
       "name": "airsonic",
       "platform": "linux",
-      "ports": [
-        "4040:4040/tcp"
-      ],
+      "ports": ["4040:4040/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Airsonic",
       "type": 1,
@@ -199,9 +191,7 @@
           "description": "For passing additional java options."
         }
       ],
-      "ports": [
-        "4040:4040/tcp"
-      ],
+      "ports": ["4040:4040/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -232,9 +222,7 @@
       "name": "Apprise-api",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/apprise-api/config</p>",
       "description": "[Apprise-api](https://github.com/caronc/apprise-api) Takes advantage of [Apprise](https://github.com/caronc/apprise) through your network with a user-friendly API. * Send notifications to more then 65+ services. * An incredibly lightweight gateway to Apprise. * A production ready micro-service at your disposal. Apprise API was designed to easily fit into existing (and new) eco-systems that are looking for a simple notification solution.",
-      "categories": [
-        "Notifications"
-      ],
+      "categories": ["Notifications"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/caronc/apprise-api/master/apprise_api/static/logo.png",
       "image": "linuxserver/apprise-api:latest",
@@ -258,9 +246,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8000:8000/tcp"
-      ],
+      "ports": ["8000:8000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -298,9 +284,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -310,11 +294,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools",
-        "Authentication"
-      ],
+      "categories": ["Other", "Tools", "Authentication"],
       "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
       "env": [
         {
@@ -327,9 +307,7 @@
       "name": "authelia",
       "note": "Requires a configuration.yml file in order to work. Documentation is available <a href='https://docs.authelia.com/deployment/deployment-ha'>here</a>.",
       "platform": "linux",
-      "ports": [
-        "9091:9091/tcp"
-      ],
+      "ports": ["9091:9091/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Authelia",
       "type": 1,
@@ -375,9 +353,7 @@
           "description": "Add any address you'd like to access babybuddy at (comma separated, no spaces)"
         }
       ],
-      "ports": [
-        "8000:8000/tcp"
-      ],
+      "ports": ["8000:8000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -392,9 +368,7 @@
       "name": "Bazarr",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/bazarr/config<br>mkdir -p /volume1/docker/bazarr/movies<br>mkdir -p /volume1/docker/bazarr/tv</p>",
       "description": "[Bazarr](https://www.bazarr.media/) is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
-      "categories": [
-        "Media"
-      ],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png",
       "image": "linuxserver/bazarr:latest",
@@ -418,9 +392,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "6767:6767/tcp"
-      ],
+      "ports": ["6767:6767/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -438,10 +410,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Video",
-        "Music"
-      ],
+      "categories": ["Video", "Music"],
       "description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
       "env": [
         {
@@ -463,9 +432,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/bazarr.png",
       "name": "Bazarr",
       "platform": "linux",
-      "ports": [
-        "6767:6767/tcp"
-      ],
+      "ports": ["6767:6767/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Bazarr",
       "type": 1,
@@ -490,9 +457,7 @@
       "name": "Beets",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/beets/config<br>mkdir -p /volume1/docker/beets/music<br>mkdir -p /volume1/docker/beets/downloads</p>",
       "description": "[Beets](http://beets.io/) is a music library manager and not, for the most part, a music player. It does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools.",
-      "categories": [
-        "Media"
-      ],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/beets-icon.png",
       "image": "linuxserver/beets:latest",
@@ -516,9 +481,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8337:8337/tcp"
-      ],
+      "ports": ["8337:8337/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -536,9 +499,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Music"
-      ],
+      "categories": ["Music"],
       "description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the MusicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
       "env": [
         {
@@ -556,9 +517,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/beets-icon.png",
       "name": "beets",
       "platform": "linux",
-      "ports": [
-        "8337:8337/tcp"
-      ],
+      "ports": ["8337:8337/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Beets",
       "type": 1,
@@ -618,9 +577,7 @@
           "description": "See the keyboard layouts section for more information and options."
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -635,9 +592,7 @@
       "name": "Boinc",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/boinc/config</p>",
       "description": "[BOINC](https://boinc.berkeley.edu/) is a platform for high-throughput computing on a large scale (thousands or millions of computers). It can be used for volunteer computing (using consumer devices) or grid computing (using organizational resources). It supports virtualized, parallel, and GPU-based applications.",
-      "categories": [
-        "Research"
-      ],
+      "categories": ["Research"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/BOINC/boinc/master/doc/logo/boinc_logo_black.jpg",
       "image": "linuxserver/boinc:latest",
@@ -667,9 +622,7 @@
           "description": "Optionally set a password for the gui."
         }
       ],
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -684,9 +637,7 @@
       "name": "Booksonic",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/booksonic/config<br>mkdir -p /volume1/docker/booksonic/audiobooks<br>mkdir -p /volume1/docker/booksonic/podcasts<br>mkdir -p /volume1/docker/booksonic/othermedia</p>",
       "description": "[Booksonic](http://booksonic.org) is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic.",
-      "categories": [
-        "Media"
-      ],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic.png",
       "image": "linuxserver/booksonic:latest",
@@ -716,9 +667,7 @@
           "description": "Base url for use with reverse proxies etc."
         }
       ],
-      "ports": [
-        "4040:4040/tcp"
-      ],
+      "ports": ["4040:4040/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -740,10 +689,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Books",
-        "Other"
-      ],
+      "categories": ["Books", "Other"],
       "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic.",
       "env": [
         {
@@ -766,9 +712,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/booksonic.png",
       "name": "booksonic",
       "platform": "linux",
-      "ports": [
-        "4040:4040/tcp"
-      ],
+      "ports": ["4040:4040/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Booksonic",
       "type": 1,
@@ -793,9 +737,7 @@
       "name": "Booksonic-air",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/booksonic-air/config<br>mkdir -p /volume1/docker/booksonic-air/audiobooks<br>mkdir -p /volume1/docker/booksonic-air/podcasts<br>mkdir -p /volume1/docker/booksonic-air/othermedia</p>",
       "description": "[Booksonic-air](http://booksonic.org) is a platform for accessing the audiobooks you own wherever you are. At the moment the platform consists of: * Booksonic Air - A server for streaming your audiobooks, successor to the original Booksonic server and based on Airsonic. * Booksonic App - An DSub based Android app for connection to Booksonic-Air servers.",
-      "categories": [
-        "Audio"
-      ],
+      "categories": ["Audio"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic-air.png",
       "image": "linuxserver/booksonic-air:latest",
@@ -825,9 +767,7 @@
           "description": "Base url for use with reverse proxies etc."
         }
       ],
-      "ports": [
-        "4040:4040/tcp"
-      ],
+      "ports": ["4040:4040/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -854,9 +794,7 @@
       "name": "Bookstack",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/bookstack/config</p>",
       "description": "[Bookstack](https://github.com/BookStackApp/BookStack) is a free and open source Wiki designed for creating beautiful documentation. Featuring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease. Powered by SQL and including a Markdown editor for those who prefer it, BookStack is geared towards making documentation more of a pleasure than a chore. For more information on BookStack visit their website and check it out: https://www.bookstackapp.com",
-      "categories": [
-        "Media"
-      ],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/bookstack-logo500x500.png",
       "image": "linuxserver/bookstack:latest",
@@ -904,9 +842,7 @@
           "description": "for specifying the database to be used (non-alphanumeric passwords must be properly escaped.)"
         }
       ],
-      "ports": [
-        "6875:80/tcp"
-      ],
+      "ports": ["6875:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -916,9 +852,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Wiki"
-      ],
+      "categories": ["Wiki"],
       "description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
       "env": [
         {
@@ -987,10 +921,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp",
-        "443:443/tcp"
-      ],
+      "ports": ["80:80/tcp", "443:443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -1000,10 +931,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Cloud",
-        "Books"
-      ],
+      "categories": ["Cloud", "Books"],
       "description": "COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices.",
       "env": [
         {
@@ -1021,9 +949,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/cops-icon.png",
       "name": "cops",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "COPS",
       "type": 1,
@@ -1042,15 +968,11 @@
       "type": 1,
       "title": "Caddy",
       "description": "Open-source web server with automatic HTTPS written in Go",
-      "categories": [
-        "webserver"
-      ],
+      "categories": ["webserver"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/caddy.png",
       "image": "caddy:latest",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "volumes": [
         {
           "container": "/data"
@@ -1063,9 +985,7 @@
       "name": "Calibre",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/calibre/config</p>",
       "description": "[Calibre](https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.",
-      "categories": [
-        "Media"
-      ],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://github.com/kovidgoyal/calibre/raw/master/resources/images/lt.png",
       "image": "linuxserver/calibre:latest",
@@ -1101,10 +1021,7 @@
           "description": "Optionally pass cli start arguments to calibre."
         }
       ],
-      "ports": [
-        "8080:8080/tcp",
-        "8081:8081/tcp"
-      ],
+      "ports": ["8080:8080/tcp", "8081:8081/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -1114,10 +1031,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Cloud",
-        "Books"
-      ],
+      "categories": ["Cloud", "Books"],
       "description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.",
       "env": [
         {
@@ -1136,9 +1050,7 @@
       "name": "calibre-web",
       "note": "Configuration <ul><li><b>/config</b> - Where Calibre-web should store it's database</li><li><b>/books</b> - Path to your calibre library metadata.db file</li></ul>",
       "platform": "linux",
-      "ports": [
-        "8083:8083/tcp"
-      ],
+      "ports": ["8083:8083/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Calibre Web",
       "type": 1,
@@ -1159,9 +1071,7 @@
       "name": "Calibre-web",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/calibre-web/config<br>mkdir -p /volume1/docker/calibre-web/books</p>",
       "description": "[Calibre-web](https://github.com/janeczku/calibre-web) is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. This software is a fork of library and licensed under the GPL v3 License.",
-      "categories": [
-        "Books"
-      ],
+      "categories": ["Books"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-icon.png",
       "image": "linuxserver/calibre-web:latest",
@@ -1197,9 +1107,7 @@
           "description": "Optionally set this to allow Google OAUTH to work"
         }
       ],
-      "ports": [
-        "8083:8083/tcp"
-      ],
+      "ports": ["8083:8083/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -1247,9 +1155,7 @@
           "description": "Specify the full URL (including protocol) when running behind a reverse proxy"
         }
       ],
-      "ports": [
-        "5000:5000/tcp"
-      ],
+      "ports": ["5000:5000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -1264,9 +1170,7 @@
       "name": "Chevereto",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/chevereto/config<br>mkdir -p /volume1/docker/chevereto/data</p>",
       "description": "[Chevereto](https://github.com/rodber/chevereto-free) is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server. It's your hosting and your rules, so say goodbye to closures and restrictions.",
-      "categories": [
-        "Websites"
-      ],
+      "categories": ["Websites"],
       "platform": "linux",
       "logo": "",
       "image": "linuxserver/chevereto:latest",
@@ -1290,10 +1194,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp",
-        "443:443/tcp"
-      ],
+      "ports": ["80:80/tcp", "443:443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -1307,11 +1208,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools",
-        "Photo"
-      ],
+      "categories": ["Other", "Tools", "Photo"],
       "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version.",
       "env": [
         {
@@ -1354,9 +1251,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/Chevereto.png",
       "name": "Chevereto",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Chevereto",
       "type": 1,
@@ -1367,18 +1262,13 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "ave recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
       "image": "gregyankovoy/chowdown:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/chowdown.png",
       "name": "Chowdown",
       "platform": "linux",
-      "ports": [
-        "4000:4000/tcp"
-      ],
+      "ports": ["4000:4000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Chowdown",
       "type": 1,
@@ -1395,9 +1285,7 @@
       "name": "Cloud9",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/cloud9/config<br>mkdir -p /volume1/docker/cloud9/code<br></p>",
       "description": "[Cloud9](https://github.com/c9/core) Cloud9 is a complete web based IDE with terminal access. This container is for running their core SDK locally and developing plugins.",
-      "categories": [
-        "Development"
-      ],
+      "categories": ["Development"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9.png",
       "image": "linuxserver/cloud9:latest",
@@ -1439,9 +1327,7 @@
           "description": "Optionally specify a password for http auth (if USERNAME and PASSWORD are not set, there will be no http auth)"
         }
       ],
-      "ports": [
-        "8000:8000/tcp"
-      ],
+      "ports": ["8000:8000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -1463,9 +1349,7 @@
       "title": "CockroachDB",
       "description": "CockroachDB cluster",
       "note": "Deploys an insecure CockroachDB cluster, please refer to <a href=\"https://www.cockroachlabs.com/docs/stable/orchestrate-cockroachdb-with-docker-swarm.html\" target=\"_blank\">CockroachDB documentation</a> for production deployments.",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/cockroachdb.png",
       "repository": {
@@ -1481,10 +1365,7 @@
       "stackfile": "https://raw.githubusercontent.com/portainer/templates/master/stacks/cockroachdb/edge/docker-stack.yml"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Code-server is VS Code running on a remote server, accessible through the browser.",
       "env": [
         {
@@ -1519,9 +1400,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/code-server.png",
       "name": "code-server",
       "platform": "linux",
-      "ports": [
-        "8443:8443/tcp"
-      ],
+      "ports": ["8443:8443/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Code Server",
       "type": 1,
@@ -1538,9 +1417,7 @@
       "name": "Code-server",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/code-server/config</p>",
       "description": "[Code-server](https://coder.com) is VS Code running on a remote server, accessible through the browser. - Code on your Chromebook, tablet, and laptop with a consistent dev environment. - If you have a Windows or Mac workstation, more easily develop for Linux. - Take advantage of large cloud servers to speed up tests, compilations, downloads, and more. - Preserve battery life when you're on the go. - All intensive computation runs on your server. - You're no longer running excess instances of Chrome.",
-      "categories": [
-        "Development"
-      ],
+      "categories": ["Development"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-banner.png",
       "image": "linuxserver/code-server:latest",
@@ -1600,9 +1477,7 @@
           "description": "If this optional variable is set, code-server will open this directory by default"
         }
       ],
-      "ports": [
-        "8443:8443/tcp"
-      ],
+      "ports": ["8443:8443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -1612,9 +1487,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Productivity"
-      ],
+      "categories": ["Productivity"],
       "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.",
       "env": [
         {
@@ -1632,9 +1505,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/codiad-icon.png",
       "name": "codiad",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Codiad",
       "type": 1,
@@ -1649,9 +1520,7 @@
       "type": 1,
       "title": "CommandBox",
       "description": "ColdFusion (CFML) CLI",
-      "categories": [
-        "development"
-      ],
+      "categories": ["development"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ortussolutions-commandbox.png",
       "image": "ortussolutions/commandbox:latest",
@@ -1662,18 +1531,13 @@
           "preset": true
         }
       ],
-      "ports": [
-        "8080/tcp",
-        "8443/tcp"
-      ]
+      "ports": ["8080/tcp", "8443/tcp"]
     },
     {
       "type": 1,
       "title": "ContentBox",
       "description": "Open-source modular CMS",
-      "categories": [
-        "CMS"
-      ],
+      "categories": ["CMS"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ortussolutions-contentbox.png",
       "image": "ortussolutions/contentbox:latest",
@@ -1694,10 +1558,7 @@
           "preset": true
         }
       ],
-      "ports": [
-        "8080/tcp",
-        "8443/tcp"
-      ],
+      "ports": ["8080/tcp", "8443/tcp"],
       "volumes": [
         {
           "container": "/data/contentbox/db"
@@ -1713,9 +1574,7 @@
       "name": "Cops",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/cops/config<br>mkdir -p /volume1/docker/cops/books</p>",
       "description": "[Cops](http://blog.slucas.fr/en/oss/calibre-opds-php-server) by Sébastien Lucas, stands for Calibre OPDS (and HTML) Php Server. COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices. Changes in your Calibre library are reflected immediately in your COPS pages. See : [COPS's home](http://blog.slucas.fr/en/oss/calibre-opds-php-server) for more details. Don't forget to check the [Wiki](https://github.com/seblucas/cops/wiki). ## Why? (taken from the author's site) In my opinion Calibre is a marvelous tool but is too big and has too much dependencies to be used for its content server. That's the main reason why I coded this OPDS server. I needed a simple tool to be installed on a small server (Seagate Dockstar in my case). I initially thought of Calibre2OPDS but as it generate static file no search was possible. Later I added an simple HTML catalog that should be usable on my Kobo. So COPS's main advantages are : * No need for many dependencies. * No need for a lot of CPU or RAM. * Not much code. * Search is available. * With Dropbox / owncloud it's very easy to have an up to date OPDS server. * It was fun to code. If you want to use the OPDS feed don't forget to specify feed.php at the end of your URL.",
-      "categories": [
-        "Books"
-      ],
+      "categories": ["Books"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-icon.png",
       "image": "linuxserver/cops:latest",
@@ -1739,9 +1598,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -1755,10 +1612,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders",
-        "Video"
-      ],
+      "categories": ["Downloaders", "Video"],
       "description": "CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a \"movies I want\"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.",
       "env": [
         {
@@ -1776,9 +1630,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/couchpotato-icon.png",
       "name": "couchpotato",
       "platform": "linux",
-      "ports": [
-        "5050:5050/tcp"
-      ],
+      "ports": ["5050:5050/tcp"],
       "restart_policy": "unless-stopped",
       "title": "CouchPotato",
       "type": 1,
@@ -1801,16 +1653,11 @@
       "type": 1,
       "title": "CrateDB",
       "description": "An open-source distributed SQL database",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/cratedb.png",
       "image": "crate:latest",
-      "ports": [
-        "4200/tcp",
-        "4300/tcp"
-      ],
+      "ports": ["4200/tcp", "4300/tcp"],
       "volumes": [
         {
           "container": "/data"
@@ -1823,9 +1670,7 @@
       "name": "Daapd",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/daapd/config<br>mkdir -p /volume1/docker/daapd/music</p>",
       "description": "[Daapd](https://owntone.github.io/owntone-server/) (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), Chromecast, MPD and internet radio.",
-      "categories": [
-        "Media"
-      ],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-git.png",
       "image": "linuxserver/daapd:latest",
@@ -1863,9 +1708,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Music"
-      ],
+      "categories": ["Music"],
       "description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
       "env": [
         {
@@ -1903,9 +1746,7 @@
       "name": "Darktable",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/darktable/config</p>",
       "description": "[darktable](https://www.darktable.org/) is an open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.",
-      "categories": [
-        "Productivity"
-      ],
+      "categories": ["Productivity"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/darktable-logo.png",
       "image": "linuxserver/darktable:latest",
@@ -1929,9 +1770,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -1941,18 +1780,13 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Another application bookmark dashboard, with fun features.",
       "image": "rmountjoy/dashmachine:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/dashmachine_logo.png",
       "name": "dashmachine",
       "platform": "linux",
-      "ports": [
-        "5000:5000/tcp"
-      ],
+      "ports": ["5000:5000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "DashMachine",
       "type": 1,
@@ -1967,9 +1801,7 @@
       "type": 1,
       "title": "Datadog agent",
       "description": "Collect events and metrics",
-      "categories": [
-        "Monitoring"
-      ],
+      "categories": ["Monitoring"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
       "image": "datadog/agent:latest",
@@ -2000,9 +1832,7 @@
     {
       "title": "Datadog agent",
       "type": 2,
-      "categories": [
-        "Monitoring"
-      ],
+      "categories": ["Monitoring"],
       "description": "Collect events and metrics",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
       "platform": "linux",
@@ -2023,9 +1853,7 @@
       "name": "Davos",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/davos/config<br>mkdir -p /volume1/docker/davos/download</p>",
       "description": "[Davos](https://github.com/linuxserver/davos) is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.",
-      "categories": [
-        "Productivity"
-      ],
+      "categories": ["Productivity"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/davos/master/docs/list.PNG",
       "image": "linuxserver/davos:latest",
@@ -2049,9 +1877,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -2065,11 +1891,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "FTP",
-        "Other",
-        "Tools"
-      ],
+      "categories": ["FTP", "Other", "Tools"],
       "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.",
       "env": [
         {
@@ -2088,9 +1910,7 @@
       "name": "davos",
       "note": "Configuration <ul><li><b>/config</b> - AppData Location</li><li><b>/downloads</b> - File Download Location</li></ul>",
       "platform": "linux",
-      "ports": [
-        "8080/tcp"
-      ],
+      "ports": ["8080/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Davos",
       "type": 1,
@@ -2111,9 +1931,7 @@
       "name": "Ddclient",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/ddclient/config</p>",
       "description": "[Ddclient](https://github.com/ddclient/ddclient) is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.",
-      "categories": [
-        "Networking"
-      ],
+      "categories": ["Networking"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ddclient-logo.png",
       "image": "linuxserver/ddclient:latest",
@@ -2146,19 +1964,14 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Music"
-      ],
+      "categories": ["Other", "Music"],
       "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
       "image": "registry.gitlab.com/bockiii/deemix-docker",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/deemix.png",
       "name": "deemix",
       "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
       "platform": "linux",
-      "ports": [
-        "6595:6595/tcp"
-      ],
+      "ports": ["6595:6595/tcp"],
       "restart_policy": "unless-stopped",
       "title": "DeeMix",
       "type": 1,
@@ -2179,9 +1992,7 @@
       "name": "Deluge",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/deluge/config<br>mkdir -p /volume1/docker/deluge/downloads</p>",
       "description": "[Deluge](http://deluge-torrent.org/) is a lightweight, Free Software, cross-platform BitTorrent client. * Full Encryption * WebUI * Plugin System * Much more...",
-      "categories": [
-        "File Management"
-      ],
+      "categories": ["File Management"],
       "platform": "linux",
       "logo": "https://avatars2.githubusercontent.com/u/6733935?v=3&s=200",
       "image": "linuxserver/deluge:latest",
@@ -2211,11 +2022,7 @@
           "description": "set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web"
         }
       ],
-      "ports": [
-        "8112:8112/tcp",
-        "6881:6881/tcp",
-        "6881:6881/udp"
-      ],
+      "ports": ["8112:8112/tcp", "6881:6881/tcp", "6881:6881/udp"],
       "volumes": [
         {
           "container": "/config",
@@ -2229,9 +2036,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders"
-      ],
+      "categories": ["Downloaders"],
       "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
       "env": [
         {
@@ -2274,9 +2079,7 @@
       "name": "Digikam",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/digikam/config</p>",
       "description": "[digiKam](https://www.digikam.org/): Professional Photo Management with the Power of Open Source",
-      "categories": [
-        "Photography"
-      ],
+      "categories": ["Photography"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam.png",
       "image": "linuxserver/digikam:latest",
@@ -2313,9 +2116,7 @@
           "description": "See the keyboard layouts section for more information and options."
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -2330,9 +2131,7 @@
       "name": "Dillinger",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/dillinger/config</p>",
       "description": "[Dillinger](https://github.com/joemccann/dillinger) is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.",
-      "categories": [
-        "Development"
-      ],
+      "categories": ["Development"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dillinger.png",
       "image": "linuxserver/dillinger:latest",
@@ -2356,9 +2155,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -2373,9 +2170,7 @@
       "name": "Diskover",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/diskover/config<br>mkdir -p /volume1/docker/diskover/data</p>",
       "description": "[Diskover](https://github.com/diskoverdata/diskover-community) is an open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.",
-      "categories": [
-        "Productivity"
-      ],
+      "categories": ["Productivity"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/diskoverdata/diskover-community/master/diskover-web/public/images/diskover.png",
       "image": "linuxserver/diskover:latest",
@@ -2423,9 +2218,7 @@
           "description": "ElasticSearch password (optional)"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -2467,9 +2260,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -2482,17 +2273,11 @@
       "type": 1,
       "title": "Dokku",
       "description": "Dokku setup as a container",
-      "categories": [
-        "PaaS"
-      ],
+      "categories": ["PaaS"],
       "platform": "linux",
       "logo": "",
       "image": "dokku/dokku",
-      "ports": [
-        "22/tcp",
-        "80/tcp",
-        "443/tcp"
-      ],
+      "ports": ["22/tcp", "80/tcp", "443/tcp"],
       "volumes": [
         {
           "container": "/mnt/dokku",
@@ -2521,9 +2306,7 @@
       "type": 3,
       "title": "Dokku",
       "description": "Dokku setup as a compose file",
-      "categories": [
-        "PaaS"
-      ],
+      "categories": ["PaaS"],
       "platform": "linux",
       "logo": "",
       "repository": {
@@ -2580,9 +2363,7 @@
       "name": "Dokuwiki",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/dokuwiki/config</p>",
       "description": "[Dokuwiki](https://www.dokuwiki.org/dokuwiki/) is a simple to use and highly versatile Open Source wiki software that doesn't require a database. It is loved by users for its clean and readable syntax. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in access controls and authentication connectors make DokuWiki especially useful in the enterprise context and the large number of plugins contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.",
-      "categories": [
-        "Productivity"
-      ],
+      "categories": ["Productivity"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dokuwiki-icon.png",
       "image": "linuxserver/dokuwiki:latest",
@@ -2606,10 +2387,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp",
-        "443:443/tcp"
-      ],
+      "ports": ["80:80/tcp", "443:443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -2624,9 +2402,7 @@
       "name": "Domoticz",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/domoticz/config</p>",
       "description": "[Domoticz](https://www.domoticz.com) is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.",
-      "categories": [
-        "Automation"
-      ],
+      "categories": ["Automation"],
       "platform": "linux",
       "logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
       "image": "linuxserver/domoticz:latest",
@@ -2662,11 +2438,7 @@
           "description": "Sets path to database. Do not set unless you know what this does."
         }
       ],
-      "ports": [
-        "8080:8080/tcp",
-        "6144:6144/tcp",
-        "1443:1443/tcp"
-      ],
+      "ports": ["8080:8080/tcp", "6144:6144/tcp", "1443:1443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -2676,10 +2448,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "HomeAutomation",
-        "Management"
-      ],
+      "categories": ["HomeAutomation", "Management"],
       "description": "Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.",
       "env": [
         {
@@ -2697,11 +2466,7 @@
       "logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
       "name": "domoticz",
       "platform": "linux",
-      "ports": [
-        "1443:1443/tcp",
-        "6144:6144/tcp",
-        "8080:8080/tcp"
-      ],
+      "ports": ["1443:1443/tcp", "6144:6144/tcp", "8080:8080/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Domoticz",
       "type": 1,
@@ -2863,9 +2628,7 @@
       "name": "Doublecommander",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/doublecommander/config<br>mkdir -p /volume1/docker/doublecommander/data</p>",
       "description": "[Double Commander](https://doublecmd.sourceforge.io/) is a free cross platform open source file manager with two panels side by side. It is inspired by Total Commander and features some new ideas.",
-      "categories": [
-        "File Management"
-      ],
+      "categories": ["File Management"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png",
       "image": "linuxserver/doublecommander:latest",
@@ -2889,9 +2652,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -2908,15 +2669,11 @@
       "type": 1,
       "title": "Drupal",
       "description": "Open-source content management framework",
-      "categories": [
-        "CMS"
-      ],
+      "categories": ["CMS"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/drupal.png",
       "image": "drupal:latest",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "volumes": [
         {
           "container": "/var/www/html"
@@ -2924,10 +2681,7 @@
       ]
     },
     {
-      "categories": [
-        "DNS",
-        "Tools"
-      ],
+      "categories": ["DNS", "Tools"],
       "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
       "env": [
         {
@@ -3050,9 +2804,7 @@
           "description": "Optionally specify any [CLI variables](https://duplicati.readthedocs.io/en/latest/07-other-command-line-utilities/) you want to launch the app with"
         }
       ],
-      "ports": [
-        "8200:8200/tcp"
-      ],
+      "ports": ["8200:8200/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3070,13 +2822,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Backup",
-        "Cloud",
-        "Other",
-        "Productivity",
-        "Tools"
-      ],
+      "categories": ["Backup", "Cloud", "Other", "Productivity", "Tools"],
       "description": "Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
       "env": [
         {
@@ -3094,9 +2840,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/duplicati-icon.png",
       "name": "duplicati",
       "platform": "linux",
-      "ports": [
-        "8200:8200/tcp"
-      ],
+      "ports": ["8200:8200/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Duplicati",
       "type": 1,
@@ -3120,16 +2864,11 @@
       "type": 1,
       "title": "Elasticsearch",
       "description": "Open-source search and analytics engine",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/elasticsearch.png",
       "image": "docker.elastic.co/elasticsearch/elasticsearch:7.15.1",
-      "ports": [
-        "9200/tcp",
-        "9300/tcp"
-      ],
+      "ports": ["9200/tcp", "9300/tcp"],
       "volumes": [
         {
           "container": "/usr/share/elasticsearch/data"
@@ -3142,9 +2881,7 @@
       "name": "Emby",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/emby/config<br>mkdir -p /volume1/docker/emby/data/tvshows<br>mkdir -p /volume1/docker/emby/data/movies<br></p>",
       "description": "[Emby](https://emby.media/) organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
-      "categories": [
-        "Home Media"
-      ],
+      "categories": ["Home Media"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png",
       "image": "linuxserver/emby:latest",
@@ -3168,10 +2905,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8096:8096/tcp",
-        "8920:8920/tcp"
-      ],
+      "ports": ["8096:8096/tcp", "8920:8920/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3193,11 +2927,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Video",
-        "Music",
-        "Photos"
-      ],
+      "categories": ["Video", "Music", "Photos"],
       "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
       "env": [
         {
@@ -3219,10 +2949,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/emby.png",
       "name": "Emby",
       "platform": "linux",
-      "ports": [
-        "8096:8096/tcp",
-        "8920:8920/tcp"
-      ],
+      "ports": ["8096:8096/tcp", "8920:8920/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Emby",
       "type": 1,
@@ -3242,19 +2969,14 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
       "image": "linuxserver/embystat:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/embystat.png",
       "name": "EmbyStat",
       "note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services.",
       "platform": "linux",
-      "ports": [
-        "6555:6555/tcp"
-      ],
+      "ports": ["6555:6555/tcp"],
       "restart_policy": "unless-stopped",
       "title": "EmbyStat",
       "type": 1,
@@ -3294,9 +3016,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "6555:6555/tcp"
-      ],
+      "ports": ["6555:6555/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3340,11 +3060,7 @@
           "description": "Specify a subfolder for reverse proxies IE '/FOLDER/'"
         }
       ],
-      "ports": [
-        "3000:3000/tcp",
-        "80:80/tcp",
-        "4001:4001/tcp"
-      ],
+      "ports": ["3000:3000/tcp", "80:80/tcp", "4001:4001/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3416,9 +3132,7 @@
           "description": "By default, the app binds to IPv4 and IPv6 addresses. Set it to `4` or `6` to bind to IPv4 only or IPv6 only, respectively. Leave blank to bind to both."
         }
       ],
-      "ports": [
-        "22:2222/tcp"
-      ],
+      "ports": ["22:2222/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3478,9 +3192,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3590,9 +3302,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3606,16 +3316,11 @@
       "title": "File browser",
       "description": "A web file manager",
       "note": "Default credentials: admin/admin",
-      "categories": [
-        "filesystem",
-        "storage"
-      ],
+      "categories": ["filesystem", "storage"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/filebrowser.png",
       "image": "filebrowser/filebrowser:latest",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "volumes": [
         {
           "container": "/data"
@@ -3627,19 +3332,14 @@
       "command": "--port 80 --database /data/database.db --root /srv"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Web File Browser which can be used as a middleware or standalone app.",
       "image": "80x86/filebrowser:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/filebrowser.png",
       "name": "filebrowser",
       "note": "The default user and password is admin/admin.",
       "platform": "linux",
-      "ports": [
-        "8082:8082/tcp"
-      ],
+      "ports": ["8082:8082/tcp"],
       "restart_policy": "unless-stopped",
       "title": "FileBrowser",
       "type": 1,
@@ -3683,9 +3383,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3723,9 +3421,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3787,9 +3483,7 @@
           "description": "A string used as part of the password key derivation process."
         }
       ],
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3827,10 +3521,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "7396:7396/tcp",
-        "36330:36330/tcp"
-      ],
+      "ports": ["7396:7396/tcp", "36330:36330/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3840,9 +3531,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other"
-      ],
+      "categories": ["Other"],
       "description": "A free, self-hostable rss aggregator.",
       "env": [
         {
@@ -3860,9 +3549,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/freshrss-icon.png",
       "name": "freshrss",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "FreshRSS",
       "type": 1,
@@ -3902,9 +3589,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -3914,11 +3599,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Web",
-        "Books",
-        "Tools"
-      ],
+      "categories": ["Web", "Books", "Tools"],
       "description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser.",
       "env": [
         {
@@ -3958,16 +3639,12 @@
       "type": 1,
       "title": "Ghost",
       "description": "Free and open-source blogging platform",
-      "categories": [
-        "blog"
-      ],
+      "categories": ["blog"],
       "note": "Access the blog management interface under <code>/ghost/</code>.",
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ghost.png",
       "image": "ghost:latest",
-      "ports": [
-        "2368/tcp"
-      ],
+      "ports": ["2368/tcp"],
       "volumes": [
         {
           "container": "/var/lib/ghost/content"
@@ -3979,18 +3656,11 @@
       "title": "Gitlab CE",
       "description": "Open-source end-to-end software development platform",
       "note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/omnibus/docker/README.html#after-starting-a-container\" target=\"_blank\">Gitlab documentation</a> to get started.",
-      "categories": [
-        "development",
-        "project-management"
-      ],
+      "categories": ["development", "project-management"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/gitlab_ce.png",
       "image": "gitlab/gitlab-ce:latest",
-      "ports": [
-        "80/tcp",
-        "443/tcp",
-        "22/tcp"
-      ],
+      "ports": ["80/tcp", "443/tcp", "22/tcp"],
       "volumes": [
         {
           "container": "/etc/gitlab"
@@ -4009,9 +3679,7 @@
       "name": "Grav",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/grav/config</p>",
       "description": "[Grav](https://github.com/getgrav/grav/) is a Fast, Simple, and Flexible, file-based Web-platform.",
-      "categories": [
-        "Web Platform"
-      ],
+      "categories": ["Web Platform"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grav-logo.png",
       "image": "linuxserver/grav:latest",
@@ -4035,9 +3703,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -4075,9 +3741,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "9283:80/tcp"
-      ],
+      "ports": ["9283:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -4087,11 +3751,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools",
-        "Finance"
-      ],
+      "categories": ["Other", "Tools", "Finance"],
       "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utility.",
       "env": [
         {
@@ -4113,9 +3773,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/grocy_logo.png",
       "name": "grocy",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Grocy",
       "type": 1,
@@ -4127,19 +3785,14 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "A clientless remote desktop gateway.",
       "image": "oznu/guacamole:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/guacamole.png",
       "name": "guacamole",
       "note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
       "platform": "linux",
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Guacamole",
       "type": 1,
@@ -4159,17 +3812,11 @@
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/guacd.png",
       "image": "linuxserver/guacd:latest",
-      "ports": [
-        "4822:4822/tcp"
-      ],
+      "ports": ["4822:4822/tcp"],
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Video",
-        "Music",
-        "Other"
-      ],
+      "categories": ["Video", "Music", "Other"],
       "description": "HTPC Manager, a front end for many htpc related applications. Uses the Hellowlol HTPC Manager fork.",
       "env": [
         {
@@ -4187,9 +3834,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/htpcmanager-icon.png",
       "name": "htpcmanager",
       "platform": "linux",
-      "ports": [
-        "8085:8085/tcp"
-      ],
+      "ports": ["8085:8085/tcp"],
       "restart_policy": "unless-stopped",
       "title": "HTPC Manager",
       "type": 1,
@@ -4235,10 +3880,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8080:8080/tcp",
-        "50000:50000/tcp"
-      ],
+      "ports": ["8080:8080/tcp", "50000:50000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -4276,9 +3918,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8181:8181/tcp"
-      ],
+      "ports": ["8181:8181/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -4296,9 +3936,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Music"
-      ],
+      "categories": ["Music"],
       "description": "Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.",
       "env": [
         {
@@ -4316,9 +3954,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/headphones-icon.png",
       "name": "headphones",
       "platform": "linux",
-      "ports": [
-        "8181:8181/tcp"
-      ],
+      "ports": ["8181:8181/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Headphones",
       "type": 1,
@@ -4450,9 +4086,7 @@
           "description": "Defaults to False. A boolean that turns on/off the Apprise integration (https://github.com/caronc/apprise)"
         }
       ],
-      "ports": [
-        "8000:8000/tcp"
-      ],
+      "ports": ["8000:8000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -4467,9 +4101,7 @@
       "name": "Hedgedoc",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/hedgedoc/config</p>",
       "description": "[HedgeDoc](https://hedgedoc.org/) gives you access to all your files wherever you are. HedgeDoc is a real-time, multi-platform collaborative markdown note editor. This means that you can write notes with other people on your desktop, tablet or even on the phone. You can sign-in via multiple auth providers like Facebook, Twitter, GitHub and many more on the homepage.",
-      "categories": [
-        "Documentation"
-      ],
+      "categories": ["Documentation"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hedgedoc-banner.png",
       "image": "linuxserver/hedgedoc:latest",
@@ -4547,9 +4179,7 @@
           "description": "If you wish to access hedgedoc at a port different than 80, 443 or 3000, you need to set this to that port (ie. `CMD_PORT=5000`) and change the port mapping accordingly (5000:5000)."
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -4587,10 +4217,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp",
-        "443:443/tcp"
-      ],
+      "ports": ["80:80/tcp", "443:443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -4600,11 +4227,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Tools",
-        "Web",
-        "Other"
-      ],
+      "categories": ["Tools", "Web", "Other"],
       "description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.",
       "env": [
         {
@@ -4622,10 +4245,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/heimdall-icon.png",
       "name": "heimdall",
       "platform": "linux",
-      "ports": [
-        "80/tcp",
-        "443/tcp"
-      ],
+      "ports": ["80/tcp", "443/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Heimdall",
       "type": 1,
@@ -4642,9 +4262,7 @@
       "name": "Homeassistant",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/homeassistant/config</p>",
       "description": "[Home Assistant Core](https://www.home-assistant.io/) - Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.",
-      "categories": [
-        "Home Automation"
-      ],
+      "categories": ["Home Automation"],
       "platform": "linux",
       "logo": "https://github.com/home-assistant/home-assistant.io/raw/next/source/images/favicon-192x192-full.png",
       "image": "linuxserver/homeassistant:latest",
@@ -4669,9 +4287,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8123:8123/tcp"
-      ],
+      "ports": ["8123:8123/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -4681,19 +4297,14 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
       "image": "b4bz/homer:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/homer.png",
       "name": "homer",
       "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
       "platform": "linux",
-      "ports": [
-        "8902:8080/tcp"
-      ],
+      "ports": ["8902:8080/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Homer",
       "type": 1,
@@ -4737,9 +4348,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8085:8085/tcp"
-      ],
+      "ports": ["8085:8085/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -4752,15 +4361,11 @@
       "type": 1,
       "title": "Httpd",
       "description": "Open-source HTTP server",
-      "categories": [
-        "webserver"
-      ],
+      "categories": ["webserver"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/httpd.png",
       "image": "httpd:latest",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "volumes": [
         {
           "container": "/usr/local/apache2/htdocs/"
@@ -4768,18 +4373,13 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Create agents that monitor and act on your behalf.",
       "image": "huginn/huginn:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/huginn.png",
       "name": "huginn",
       "platform": "linux",
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Huginn",
       "type": 1,
@@ -4791,13 +4391,7 @@
       ]
     },
     {
-      "categories": [
-        "Cloud",
-        "Productivity",
-        "Tools",
-        "Other",
-        "Web"
-      ],
+      "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
       "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
       "env": [
         {
@@ -4843,9 +4437,7 @@
       "name": "Ipfs",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/ipfs/config</p>",
       "description": "[Ipfs](https://ipfs.io/) - A peer-to-peer hypermedia protocol designed to make the web faster, safer, and more open.",
-      "categories": [
-        "P2P"
-      ],
+      "categories": ["P2P"],
       "platform": "linux",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ipfs-logo-1024-ice-text.png/480px-Ipfs-logo-1024-ice-text.png",
       "image": "linuxserver/ipfs:latest",
@@ -4889,9 +4481,7 @@
       "title": "IronFunctions",
       "description": "Open-source serverless computing platform",
       "note": "Deploys the IronFunctions API and UI.",
-      "categories": [
-        "serverless"
-      ],
+      "categories": ["serverless"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ironfunctions.png",
       "repository": {
@@ -4940,9 +4530,7 @@
           "description": "Optionally specify additional arguments to be passed."
         }
       ],
-      "ports": [
-        "9117:9117/tcp"
-      ],
+      "ports": ["9117:9117/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -4956,10 +4544,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders",
-        "Tools"
-      ],
+      "categories": ["Downloaders", "Tools"],
       "description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.",
       "env": [
         {
@@ -4977,9 +4562,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/jacket-icon.png",
       "name": "jackett",
       "platform": "linux",
-      "ports": [
-        "9117:9117/tcp"
-      ],
+      "ports": ["9117:9117/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Jackett",
       "type": 1,
@@ -5052,11 +4635,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Video",
-        "Music",
-        "Photos"
-      ],
+      "categories": ["Video", "Music", "Photos"],
       "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
       "env": [
         {
@@ -5078,10 +4657,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/jellyfin.png",
       "name": "jellyfin",
       "platform": "linux",
-      "ports": [
-        "8096:8096/tcp",
-        "8920:8920/tcp"
-      ],
+      "ports": ["8096:8096/tcp", "8920:8920/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Jellyfin",
       "type": 1,
@@ -5104,16 +4680,11 @@
       "type": 1,
       "title": "Jenkins",
       "description": "Open-source continuous integration tool",
-      "categories": [
-        "continuous-integration"
-      ],
+      "categories": ["continuous-integration"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/jenkins.png",
       "image": "jenkins/jenkins:lts-jdk11",
-      "ports": [
-        "8080/tcp",
-        "50000/tcp"
-      ],
+      "ports": ["8080/tcp", "50000/tcp"],
       "volumes": [
         {
           "container": "/var/jenkins_home"
@@ -5149,9 +4720,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -5164,9 +4733,7 @@
       "type": 1,
       "title": "Joomla",
       "description": "Another free and open-source CMS",
-      "categories": [
-        "CMS"
-      ],
+      "categories": ["CMS"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/joomla.png",
       "image": "joomla:latest",
@@ -5181,9 +4748,7 @@
           "label": "Database password"
         }
       ],
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "volumes": [
         {
           "container": "/var/www/html"
@@ -5231,9 +4796,7 @@
           "description": "Specify the URL at which the webserver is reachable either `https://kanzi.server.com/` or `https://server.com/kanzi/` Note the trailing slash **MUST** be included."
         }
       ],
-      "ports": [
-        "8000:8000/tcp"
-      ],
+      "ports": ["8000:8000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -5278,10 +4841,7 @@
           "description": "Optionally specify a DockerHub password to pull private images."
         }
       ],
-      "ports": [
-        "3000:3000/tcp",
-        "443:443/tcp"
-      ],
+      "ports": ["3000:3000/tcp", "443:443/tcp"],
       "volumes": [
         {
           "container": "/opt",
@@ -5335,9 +4895,7 @@
           "description": "See the keyboard layouts section for more information and options."
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -5347,9 +4905,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Video"
-      ],
+      "categories": ["Video"],
       "description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
       "env": [
         {
@@ -5367,10 +4923,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/kodi-icon.png",
       "name": "kodi-headless",
       "platform": "linux",
-      "ports": [
-        "8080/tcp",
-        "9777/udp"
-      ],
+      "ports": ["8080/tcp", "9777/udp"],
       "restart_policy": "unless-stopped",
       "title": "Kodi Headless",
       "type": 1,
@@ -5382,9 +4935,7 @@
       ]
     },
     {
-      "categories": [
-        "Books"
-      ],
+      "categories": ["Books"],
       "description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
       "env": [
         {
@@ -5402,9 +4953,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lazylibrarian-icon.png",
       "name": "lazylibrarian",
       "platform": "linux",
-      "ports": [
-        "5299:5299/tcp"
-      ],
+      "ports": ["5299:5299/tcp"],
       "restart_policy": "unless-stopped",
       "title": "LazyLibrarian",
       "type": 1,
@@ -5455,9 +5004,7 @@
           "description": "Allows additional functionality to be added, e.g. the Calibredb import program (optional, more info below)"
         }
       ],
-      "ports": [
-        "5299:5299/tcp"
-      ],
+      "ports": ["5299:5299/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -5509,17 +5056,11 @@
           "description": "Point this to the private key file, matching the certificate file referred to in CERTFILE"
         }
       ],
-      "ports": [
-        "8888:8888/tcp",
-        "9000:9000/tcp"
-      ],
+      "ports": ["8888:8888/tcp", "9000:9000/tcp"],
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Tools",
-        "Web"
-      ],
+      "categories": ["Tools", "Web"],
       "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.",
       "env": [
         {
@@ -5573,10 +5114,7 @@
       "name": "letsencrypt / SWAG",
       "note": "Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.<ul><li>- Port 443 on the internet side of the router should be forwarded to this container's port 443.</li><li>- If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains can be www,ftp,cloud</li><li>- The container detects changes to url and subdomains, revokes existing certs and generates new ones during start.</li><li>- It also detects changes to the DHLEVEL parameter and replaces the dhparams file.</li><li>- If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file <code>docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd &lt;username&gt;</code>",
       "platform": "linux",
-      "ports": [
-        "80/tcp",
-        "443/tcp"
-      ],
+      "ports": ["80/tcp", "443/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Let's Encrypt / SWAG",
       "type": 1,
@@ -5588,18 +5126,13 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "A Free and Open Source Speedtest for HTML5 and more.",
       "image": "linuxserver/librespeed:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/speedtest.png",
       "name": "librespeed",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "LibreSpeed",
       "type": 1,
@@ -5616,9 +5149,7 @@
       "name": "Libreoffice",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/libreoffice/config</p>",
       "description": "[LibreOffice](https://www.libreoffice.org/) is a free and powerful office suite, and a successor to OpenOffice.org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.",
-      "categories": [
-        "Productivity"
-      ],
+      "categories": ["Productivity"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/libreoffice-logo.png",
       "image": "linuxserver/libreoffice:latest",
@@ -5642,9 +5173,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -5730,9 +5259,7 @@
           "description": "Database port. Required for mysql."
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -5770,9 +5297,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8686:8686/tcp"
-      ],
+      "ports": ["8686:8686/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -5790,10 +5315,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders",
-        "Music"
-      ],
+      "categories": ["Downloaders", "Music"],
       "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
       "env": [
         {
@@ -5811,9 +5333,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lidarr.png",
       "name": "lidarr",
       "platform": "linux",
-      "ports": [
-        "8686:8686/tcp"
-      ],
+      "ports": ["8686:8686/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Lidarr",
       "type": 1,
@@ -5861,9 +5381,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -5876,9 +5394,7 @@
       "type": 2,
       "title": "LiveSwitch",
       "description": "A basic LiveSwitch stack with gateway, caching, database and media server",
-      "categories": [
-        "media"
-      ],
+      "categories": ["media"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/liveswitch.png",
       "repository": {
@@ -5896,9 +5412,7 @@
       "type": 3,
       "title": "LiveSwitch",
       "description": "A basic LiveSwitch compose with gateway, caching, database and media server",
-      "categories": [
-        "media"
-      ],
+      "categories": ["media"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/liveswitch.png",
       "repository": {
@@ -5965,9 +5479,7 @@
           "description": "for specifying the database to be used"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -5981,12 +5493,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Cloud",
-        "Web",
-        "Management",
-        "Photos"
-      ],
+      "categories": ["Cloud", "Web", "Management", "Photos"],
       "description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
       "env": [
         {
@@ -6004,9 +5511,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lychee-icon.png",
       "name": "lychee",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Lychee",
       "type": 1,
@@ -6025,9 +5530,7 @@
       "type": 1,
       "title": "MariaDB",
       "description": "Performance beyond MySQL",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mariadb.png",
       "image": "mariadb:latest",
@@ -6037,9 +5540,7 @@
           "label": "Root password"
         }
       ],
-      "ports": [
-        "3306/tcp"
-      ],
+      "ports": ["3306/tcp"],
       "volumes": [
         {
           "container": "/var/lib/mysql"
@@ -6047,10 +5548,7 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "An Enhanced drop in replacement for Mysql.",
       "env": [
         {
@@ -6073,9 +5571,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mariadb-icon.png",
       "name": "mariadb",
       "platform": "linux",
-      "ports": [
-        "3306:3306/tcp"
-      ],
+      "ports": ["3306:3306/tcp"],
       "restart_policy": "unless-stopped",
       "title": "MariaDB",
       "type": 1,
@@ -6145,9 +5641,7 @@
           "description": "Set this to ingest sql files from an http/https endpoint (comma seperated array)."
         }
       ],
-      "ports": [
-        "3306:3306/tcp"
-      ],
+      "ports": ["3306:3306/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -6160,9 +5654,7 @@
       "type": 1,
       "title": "Mautic",
       "description": "Open-source marketing automation platform",
-      "categories": [
-        "marketing"
-      ],
+      "categories": ["marketing"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mautic.png",
       "image": "mautic/mautic:latest",
@@ -6177,9 +5669,7 @@
           "label": "Database password"
         }
       ],
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "volumes": [
         {
           "container": "/var/www/html"
@@ -6187,9 +5677,7 @@
       ]
     },
     {
-      "categories": [
-        "Other"
-      ],
+      "categories": ["Other"],
       "description": "McMyAdmin 2 is the leading web control panel and administration console for Minecraft servers.",
       "env": [
         {
@@ -6207,10 +5695,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mcmyadmin-icon.png",
       "name": "mcmyadmin2",
       "platform": "linux",
-      "ports": [
-        "8080:8080/tcp",
-        "25565:25565/tcp"
-      ],
+      "ports": ["8080:8080/tcp", "25565:25565/tcp"],
       "restart_policy": "unless-stopped",
       "title": "McMyAdmin 2",
       "type": 1,
@@ -6249,9 +5734,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8081:8081/tcp"
-      ],
+      "ports": ["8081:8081/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -6269,10 +5752,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders",
-        "Video"
-      ],
+      "categories": ["Downloaders", "Video"],
       "description": "Medusa, automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
       "env": [
         {
@@ -6290,9 +5770,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/medusa-icon.png",
       "name": "medusa",
       "platform": "linux",
-      "ports": [
-        "8081:8081/tcp"
-      ],
+      "ports": ["8081:8081/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Medusa",
       "type": 1,
@@ -6315,9 +5793,7 @@
       "type": 2,
       "title": "Microsoft OMS Agent",
       "description": "Microsoft Operations Management Suite Linux agent.",
-      "categories": [
-        "OPS"
-      ],
+      "categories": ["OPS"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
       "repository": {
@@ -6372,9 +5848,7 @@
           "description": "Optionally specify any [CLI variables](https://wiki.minetest.net/Command_line) you want to launch the app with"
         }
       ],
-      "ports": [
-        "30000:30000/udp"
-      ],
+      "ports": ["30000:30000/udp"],
       "volumes": [
         {
           "container": "/config/.minetest",
@@ -6384,9 +5858,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other"
-      ],
+      "categories": ["Other"],
       "description": "Server version of minetest, a free, open source alternative to minecraft.",
       "env": [
         {
@@ -6404,9 +5876,7 @@
       "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
       "name": "minetest",
       "platform": "linux",
-      "ports": [
-        "30000:30000/udp"
-      ],
+      "ports": ["30000:30000/udp"],
       "restart_policy": "unless-stopped",
       "title": "Minetest",
       "type": 1,
@@ -6420,16 +5890,11 @@
       "type": 1,
       "title": "Minio",
       "description": "A distributed object storage server built for cloud applications and devops",
-      "categories": [
-        "storage"
-      ],
+      "categories": ["storage"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/minio.png",
       "image": "quay.io/minio/minio:latest",
-      "ports": [
-        "9000/tcp",
-        "9001/tcp"
-      ],
+      "ports": ["9000/tcp", "9001/tcp"],
       "env": [
         {
           "name": "MINIO_ROOT_USER",
@@ -6485,11 +5950,7 @@
           "description": "Specify specific run params for minisatip"
         }
       ],
-      "ports": [
-        "8875:8875/tcp",
-        "554:554/tcp",
-        "1900:1900/udp"
-      ],
+      "ports": ["8875:8875/tcp", "554:554/tcp", "1900:1900/udp"],
       "volumes": [
         {
           "container": "/config",
@@ -6499,11 +5960,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Video",
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Video", "Other", "Tools"],
       "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards. The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.",
       "env": [
         {
@@ -6521,11 +5978,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/minisatip-icon.png",
       "name": "minisatip",
       "platform": "linux",
-      "ports": [
-        "8875:8875/tcp",
-        "554:554/tcp",
-        "1900:1900/udp"
-      ],
+      "ports": ["8875:8875/tcp", "554:554/tcp", "1900:1900/udp"],
       "restart_policy": "unless-stopped",
       "title": "Minisatip",
       "type": 1
@@ -6534,15 +5987,11 @@
       "type": 1,
       "title": "Mongo",
       "description": "Open-source document-oriented database",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mongo.png",
       "image": "mongo:latest",
-      "ports": [
-        "27017/tcp"
-      ],
+      "ports": ["27017/tcp"],
       "volumes": [
         {
           "container": "/data/db"
@@ -6578,9 +6027,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -6594,18 +6041,13 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Music"
-      ],
+      "categories": ["Other", "Music"],
       "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
       "image": "linuxserver/mstream:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mstream.png",
       "name": "mstream",
       "platform": "linux",
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Mstream",
       "type": 1,
@@ -6621,11 +6063,7 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "Voice",
-        "Chat"
-      ],
+      "categories": ["Other", "Voice", "Chat"],
       "description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
       "env": [
         {
@@ -6647,10 +6085,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/Mumble-logo.png",
       "name": "murmur",
       "platform": "linux",
-      "ports": [
-        "64738:64738/tcp",
-        "64738:64738/udp"
-      ],
+      "ports": ["64738:64738/tcp", "64738:64738/udp"],
       "restart_policy": "unless-stopped",
       "title": "Murmur",
       "type": 1,
@@ -6674,11 +6109,7 @@
       ]
     },
     {
-      "categories": [
-        "Music",
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Music", "Other", "Tools"],
       "description": "MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
       "env": [
         {
@@ -6701,9 +6132,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/musicbrainz-icon.png",
       "name": "musicbrainz",
       "platform": "linux",
-      "ports": [
-        "5000:5000/tcp"
-      ],
+      "ports": ["5000:5000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "MusicBrainz",
       "type": 1,
@@ -6747,9 +6176,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -6759,12 +6186,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Web",
-        "Proxy",
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Web", "Proxy", "Other", "Tools"],
       "description": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
       "env": [
         {
@@ -6782,9 +6204,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/muximux-icon.png",
       "name": "muximux",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Muximux",
       "type": 1,
@@ -6799,9 +6219,7 @@
       "type": 1,
       "title": "MySQL",
       "description": "The most popular open-source database",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
       "image": "mysql/mysql-server:5.7",
@@ -6816,9 +6234,7 @@
           "preset": true
         }
       ],
-      "ports": [
-        "3306/tcp"
-      ],
+      "ports": ["3306/tcp"],
       "volumes": [
         {
           "container": "/var/lib/mysql"
@@ -6826,10 +6242,7 @@
       ]
     },
     {
-      "categories": [
-        "Downloaders",
-        "Books"
-      ],
+      "categories": ["Downloaders", "Books"],
       "description": "An automated Comic Book downloader (cbr/cbz) for use with SABnzbd, NZBGet and torrents.",
       "env": [
         {
@@ -6847,9 +6260,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mylar-icon.png",
       "name": "mylar",
       "platform": "linux",
-      "ports": [
-        "8090:8090/tcp"
-      ],
+      "ports": ["8090:8090/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Mylar",
       "type": 1,
@@ -6891,9 +6302,7 @@
           "description": "for GroupID"
         }
       ],
-      "ports": [
-        "8090:8090/tcp"
-      ],
+      "ports": ["8090:8090/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -6939,9 +6348,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -6951,9 +6358,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders"
-      ],
+      "categories": ["Downloaders"],
       "description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players.",
       "env": [
         {
@@ -6971,9 +6376,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nzbget-icon.png",
       "name": "nzbget",
       "platform": "linux",
-      "ports": [
-        "6789:6789/tcp"
-      ],
+      "ports": ["6789:6789/tcp"],
       "restart_policy": "unless-stopped",
       "title": "NZBGet",
       "type": 1,
@@ -6989,11 +6392,7 @@
       ]
     },
     {
-      "categories": [
-        "Downloaders",
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Downloaders", "Other", "Tools"],
       "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
       "env": [
         {
@@ -7011,9 +6410,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/hydra-icon.png",
       "name": "nzbhydra2",
       "platform": "linux",
-      "ports": [
-        "5076:5076/tcp"
-      ],
+      "ports": ["5076:5076/tcp"],
       "restart_policy": "unless-stopped",
       "title": "NZBHydra 2",
       "type": 1,
@@ -7099,11 +6496,7 @@
           "description": "HTTP/HTTPS endpoint to download a 7z file with the data.ldb to bootstrap to this node"
         }
       ],
-      "ports": [
-        "8075:8075/tcp",
-        "7076:3000/tcp",
-        "7077:3001/tcp"
-      ],
+      "ports": ["8075:8075/tcp", "7076:3000/tcp", "7077:3001/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -7121,9 +6514,7 @@
       "platform": "linux",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Nano_logo.png/640px-Nano_logo.png",
       "image": "linuxserver/nano-wallet:latest",
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "restart_policy": "unless-stopped"
     },
     {
@@ -7167,11 +6558,7 @@
           "description": "Specify a sobfolder if running this behind a reverse proxy (IE /proxy/)"
         }
       ],
-      "ports": [
-        "3000:3000/tcp",
-        "69:69/udp",
-        "8080:80/tcp"
-      ],
+      "ports": ["3000:3000/tcp", "69:69/udp", "8080:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -7333,9 +6720,7 @@
           "description": "A mapping of permissions to assign a new user account when created using remote authentication (optional, default: {})"
         }
       ],
-      "ports": [
-        "8000:8000/tcp"
-      ],
+      "ports": ["8000:8000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -7373,9 +6758,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "443:443/tcp"
-      ],
+      "ports": ["443:443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -7389,13 +6772,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Cloud",
-        "Productivity",
-        "Tools",
-        "Other",
-        "Web"
-      ],
+      "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
       "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
       "env": [
         {
@@ -7440,16 +6817,11 @@
       "type": 1,
       "title": "Nginx",
       "description": "High performance web server",
-      "categories": [
-        "webserver"
-      ],
+      "categories": ["webserver"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png",
       "image": "nginx:latest",
-      "ports": [
-        "80/tcp",
-        "443/tcp"
-      ],
+      "ports": ["80/tcp", "443/tcp"],
       "volumes": [
         {
           "container": "/etc/nginx"
@@ -7488,10 +6860,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp",
-        "443:443/tcp"
-      ],
+      "ports": ["80:80/tcp", "443:443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -7501,10 +6870,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Web",
-        "Proxy"
-      ],
+      "categories": ["Web", "Proxy"],
       "description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
       "env": [
         {
@@ -7522,10 +6888,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nginx-icon.png",
       "name": "nginx",
       "platform": "linux",
-      "ports": [
-        "80/tcp",
-        "443/tcp"
-      ],
+      "ports": ["80/tcp", "443/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Nginx",
       "type": 1,
@@ -7537,10 +6900,7 @@
       ]
     },
     {
-      "categories": [
-        "Proxy",
-        "Tools"
-      ],
+      "categories": ["Proxy", "Tools"],
       "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
       "image": "jc21/nginx-proxy-manager",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/proxy_mgr.png",
@@ -7553,11 +6913,7 @@
           "default": "/data/database.sqlite"
         }
       ],
-      "ports": [
-        "80:80/tcp",
-        "81:81/tcp",
-        "443:443/tcp"
-      ],
+      "ports": ["80:80/tcp", "81:81/tcp", "443:443/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Nginx Proxy Manager",
       "type": 1,
@@ -7601,9 +6957,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "6667:6667/tcp"
-      ],
+      "ports": ["6667:6667/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -7653,9 +7007,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "1563:1563/tcp"
-      ],
+      "ports": ["1563:1563/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -7668,9 +7020,7 @@
       "type": 1,
       "title": "NodeJS",
       "description": "JavaScript-based platform for server-side and networking applications",
-      "categories": [
-        "development"
-      ],
+      "categories": ["development"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/node.png",
       "image": "node:latest",
@@ -7718,9 +7068,7 @@
           "description": "Specify the password for web authentication."
         }
       ],
-      "ports": [
-        "6789:6789/tcp"
-      ],
+      "ports": ["6789:6789/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -7762,9 +7110,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "5076:5076/tcp"
-      ],
+      "ports": ["5076:5076/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -7778,9 +7124,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other"
-      ],
+      "categories": ["Other"],
       "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module (CAM). The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
       "env": [
         {
@@ -7798,10 +7142,7 @@
       "logo": "http://i.imgur.com/8LadrLg.png",
       "name": "oscam",
       "platform": "linux",
-      "ports": [
-        "8888:8888/tcp",
-        "10000:10000/tcp"
-      ],
+      "ports": ["8888:8888/tcp", "10000:10000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "OScam",
       "type": 1,
@@ -7847,9 +7188,7 @@
           "description": "Subfolder can optionally be defined as an env variable for reverse proxies. Keep in mind that once this value is defined, the gui setting for base url no longer works. To use the gui setting, remove this env variable."
         }
       ],
-      "ports": [
-        "3579:3579/tcp"
-      ],
+      "ports": ["3579:3579/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -7859,12 +7198,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders",
-        "Other",
-        "Video",
-        "Tools"
-      ],
+      "categories": ["Downloaders", "Other", "Video", "Tools"],
       "description": "Ombi allows you to host your own Plex Request and user management system.",
       "env": [
         {
@@ -7882,9 +7216,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ombi.png",
       "name": "ombi",
       "platform": "linux",
-      "ports": [
-        "3579:3579/tcp"
-      ],
+      "ports": ["3579:3579/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Ombi",
       "type": 1,
@@ -7900,9 +7232,7 @@
       "title": "OpenAMT",
       "description": "OpenAMT Cloud Toolkit",
       "note": "MPS password needs to be 8-32 characters including one uppercase, one lowercase letters, one base-10 digit and one special character.",
-      "categories": [
-        "Cloud"
-      ],
+      "categories": ["Cloud"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/intel.png",
       "repository": {
@@ -7949,9 +7279,7 @@
       "name": "func",
       "description": "Serverless functions made simple",
       "note": "Deploys the API gateway and sample functions. You can access the UI on port 8080. <b>Warning</b>: the name of the stack must be 'func'.",
-      "categories": [
-        "serverless"
-      ],
+      "categories": ["serverless"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/openfaas.png",
       "repository": {
@@ -7960,9 +7288,7 @@
       }
     },
     {
-      "categories": [
-        "Other"
-      ],
+      "categories": ["Other"],
       "description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
       "env": [
         {
@@ -7985,11 +7311,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/openvpn-as-icon.png",
       "name": "openvpn-as",
       "platform": "linux",
-      "ports": [
-        "943:943/tcp",
-        "9443:9443/tcp",
-        "1194:1194/udp"
-      ],
+      "ports": ["943:943/tcp", "9443:9443/tcp", "1194:1194/udp"],
       "restart_policy": "unless-stopped",
       "title": "OpenVPN Access Server",
       "type": 1,
@@ -8083,9 +7405,7 @@
           "description": "Optionally specify a user name (Default:`linuxserver.io`)"
         }
       ],
-      "ports": [
-        "2222:2222/tcp"
-      ],
+      "ports": ["2222:2222/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -8147,9 +7467,7 @@
           "description": "Optionally set sudo password via hash (takes priority over `SUDO_PASSWORD` var). Format is `$type$salt$hashed`."
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -8159,10 +7477,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
       "env": [
         {
@@ -8180,9 +7495,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/organizr-icon.png",
       "name": "organizr-v2",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Organizr",
       "type": 1,
@@ -8222,9 +7535,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8888:8888/tcp"
-      ],
+      "ports": ["8888:8888/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -8239,9 +7550,7 @@
       "name": "Overseerr",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/overseerr/config</p>",
       "description": "[Overseerr](https://overseerr.dev/) is a request management and media discovery tool built to work with your existing Plex ecosystem.",
-      "categories": [
-        "Media"
-      ],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/overseerr.png",
       "image": "linuxserver/overseerr:latest",
@@ -8265,9 +7574,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "5055:5055/tcp"
-      ],
+      "ports": ["5055:5055/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -8277,10 +7584,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Overseerr is a free and open source software application for managing requests for your media library.",
       "env": [
         {
@@ -8298,9 +7602,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/overseerr-icon.png",
       "name": "Overseerr",
       "platform": "linux",
-      "ports": [
-        "5055:5055/tcp"
-      ],
+      "ports": ["5055:5055/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Overseerr",
       "type": 1,
@@ -8312,13 +7614,7 @@
       ]
     },
     {
-      "categories": [
-        "Cloud",
-        "Productivity",
-        "Tools",
-        "Other",
-        "Web"
-      ],
+      "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
       "description": "ownCloud is a self-hosted file sync and share server. It provides access to your data through a web interface, sync clients or WebDAV while providing a platform to view, sync and share across devices easily—all under your control. ownCloud’s open architecture is extensible via a simple but powerful API for applications and plugins and it works with any storage.",
       "env": [
         {
@@ -8402,9 +7698,7 @@
           "description": "Specify an external redis instance to use. Can optionally include a port (`redis:6379`) and/or db (`redis/foo`). If left blank or not included, will use a built-in redis instance. If changed after initial setup will also require manual modification of /config/settings.py"
         }
       ],
-      "ports": [
-        "8000:8000/tcp"
-      ],
+      "ports": ["8000:8000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -8418,10 +7712,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Petio is a third party companion app available to Plex server owners to allow their users to request, review and discover content.",
       "env": [
         {
@@ -8454,9 +7745,7 @@
       "type": 3
     },
     {
-      "categories": [
-        "Photos"
-      ],
+      "categories": ["Photos"],
       "description": "A simple, easy way to turn a photo album into a webgallery.",
       "env": [
         {
@@ -8474,9 +7763,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/photoshow-icon.png",
       "name": "photoshow",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "PhotoShow",
       "type": 1,
@@ -8524,9 +7811,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -8549,9 +7834,7 @@
       "name": "Phpmyadmin",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/phpmyadmin/config</p>",
       "description": "[Phpmyadmin](https://github.com/phpmyadmin/phpmyadmin/) is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.",
-      "categories": [
-        "System Tools"
-      ],
+      "categories": ["System Tools"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png",
       "image": "linuxserver/phpmyadmin:latest",
@@ -8587,9 +7870,7 @@
           "description": "Set the URL you will use to access the web frontend"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -8599,10 +7880,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
       "image": "pihole/pihole:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/pihole.png",
@@ -8659,9 +7937,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -8699,9 +7975,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -8715,9 +7989,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Photos"
-      ],
+      "categories": ["Photos"],
       "description": "Piwigo is photo gallery software for the web, built by an active community of users and developers.",
       "env": [
         {
@@ -8735,9 +8007,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/piwigo-icon.png",
       "name": "piwigo",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Piwigo",
       "type": 1,
@@ -8754,9 +8024,7 @@
       "name": "Pixapop",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/pixapop/config<br>mkdir -p /volume1/docker/pixapop/photos</p>",
       "description": "[Pixapop](https://github.com/bierdok/pixapop) is an open-source single page application to view your photos in the easiest way possible.",
-      "categories": [
-        "Productivity"
-      ],
+      "categories": ["Productivity"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop.png",
       "image": "linuxserver/pixapop:latest",
@@ -8792,9 +8060,7 @@
           "description": "Specify a password to enable authentication."
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -8860,11 +8126,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Video",
-        "Music",
-        "Photos"
-      ],
+      "categories": ["Video", "Music", "Photos"],
       "description": "Your favorite movies, TV, music, web shows, podcasts, and more, all streamed to your favorite screens.",
       "env": [
         {
@@ -8907,12 +8169,7 @@
       ]
     },
     {
-      "categories": [
-        "Downloaders",
-        "Other",
-        "Video",
-        "Tools"
-      ],
+      "categories": ["Downloaders", "Other", "Video", "Tools"],
       "description": "Simple automated way for users to request new content for Plex.",
       "env": [
         {
@@ -8935,9 +8192,7 @@
       "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
       "name": "plexrequests",
       "platform": "linux",
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Plex Requests",
       "type": 1,
@@ -8954,9 +8209,7 @@
       "name": "Plex-meta-manager",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/plex-meta-manager/config</p>",
       "description": "[Plex-meta-manager](https://github.com/meisnate12/Plex-Meta-Manager) is a Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.",
-      "categories": [
-        "Media Management"
-      ],
+      "categories": ["Media Management"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plex-meta-manager-banner.png",
       "image": "linuxserver/plex-meta-manager:latest",
@@ -9023,15 +8276,11 @@
       "title": "Plone",
       "description": "A free and open-source CMS built on top of Zope",
       "note": "Default user and password are admin/admin",
-      "categories": [
-        "CMS"
-      ],
+      "categories": ["CMS"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/plone.png",
       "image": "plone:latest",
-      "ports": [
-        "8080/tcp"
-      ],
+      "ports": ["8080/tcp"],
       "volumes": [
         {
           "container": "/data"
@@ -9043,9 +8292,7 @@
       "title": "Portainer Agent",
       "description": "Manage all the resources in your Swarm cluster",
       "note": "The agent will be deployed globally inside your cluster and available on port 9001.",
-      "categories": [
-        "portainer"
-      ],
+      "categories": ["portainer"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/portainer.png",
       "repository": {
@@ -9057,9 +8304,7 @@
       "type": 1,
       "title": "PostgreSQL",
       "description": "The most advanced open-source database",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
       "image": "postgres:latest",
@@ -9073,9 +8318,7 @@
           "label": "Superuser password"
         }
       ],
-      "ports": [
-        "5432/tcp"
-      ],
+      "ports": ["5432/tcp"],
       "volumes": [
         {
           "container": "/var/lib/postgresql/data"
@@ -9083,12 +8326,7 @@
       ]
     },
     {
-      "categories": [
-        "Cloud",
-        "Productivity",
-        "Tools",
-        "Other"
-      ],
+      "categories": ["Cloud", "Productivity", "Tools", "Other"],
       "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files.",
       "env": [
         {
@@ -9106,9 +8344,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/projectsend-logo.png",
       "name": "projectsend",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "ProjectSend",
       "type": 1,
@@ -9158,9 +8394,7 @@
           "description": "To set maximum upload size (in MB), default if unset is 5000."
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -9174,22 +8408,14 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Email",
-        "Productivity",
-        "Tools",
-        "Other"
-      ],
+      "categories": ["Email", "Productivity", "Tools", "Other"],
       "description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
       "image": "shenxn/protonmail-bridge:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/protonmail-bridge.png",
       "name": "protonmail-bridge",
       "note": "Please refer to the documentation <a href='https://hub.docker.com/r/shenxn/protonmail-bridge'/>here</a> to set this up.",
       "platform": "linux",
-      "ports": [
-        "143/tcp",
-        "25/tcp"
-      ],
+      "ports": ["143/tcp", "25/tcp"],
       "restart_policy": "unless-stopped",
       "title": "ProtonMail Bridge",
       "type": 1,
@@ -9201,10 +8427,7 @@
       ]
     },
     {
-      "categories": [
-        "Downloaders",
-        "Video"
-      ],
+      "categories": ["Downloaders", "Video"],
       "description": "Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required (we do it all).",
       "env": [
         {
@@ -9222,9 +8445,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/prowlarr.png",
       "name": "prowlarr",
       "platform": "linux",
-      "ports": [
-        "9696:9696/tcp"
-      ],
+      "ports": ["9696:9696/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Prowlarr",
       "type": 1,
@@ -9270,9 +8491,7 @@
           "description": "Secret path for admin access. Defaults to `/pwndrop`. This parameter only takes effect during initial install; it can later be changed in the web gui."
         }
       ],
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -9282,10 +8501,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Cloud",
-        "Other"
-      ],
+      "categories": ["Cloud", "Other"],
       "description": "Pydio (formerly AjaXplorer) is a mature open source software solution for file sharing and synchronization. With intuitive user interfaces (web / mobile / desktop), Pydio provides enterprise-grade features to gain back control and privacy of your data: user directory connectors, legacy filesystems drivers, comprehensive admin interface, and much more.",
       "env": [
         {
@@ -9303,9 +8519,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/pydio-icon.png",
       "name": "pydio",
       "platform": "linux",
-      "ports": [
-        "443/tcp"
-      ],
+      "ports": ["443/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Pydio",
       "type": 1,
@@ -9361,10 +8575,7 @@
           "description": "Enter the LAN IP of the docker server. Required for local access by IP, added to self signed cert as SAN (not required if accessing only through reverse proxy)."
         }
       ],
-      "ports": [
-        "8080:8080/tcp",
-        "33060:33060/tcp"
-      ],
+      "ports": ["8080:8080/tcp", "33060:33060/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -9402,10 +8613,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8000:8000/tcp",
-        "9666:9666/tcp"
-      ],
+      "ports": ["8000:8000/tcp", "9666:9666/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -9465,9 +8673,7 @@
           "description": "Specify a basic auth password."
         }
       ],
-      "ports": [
-        "3131:3131/tcp"
-      ],
+      "ports": ["3131:3131/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -9515,11 +8721,7 @@
           "description": "for changing the port of the webui, see below for explanation"
         }
       ],
-      "ports": [
-        "8080:8080/tcp",
-        "6881:6881/tcp",
-        "6881:6881/udp"
-      ],
+      "ports": ["8080:8080/tcp", "6881:6881/tcp", "6881:6881/udp"],
       "volumes": [
         {
           "container": "/config",
@@ -9561,9 +8763,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -9577,9 +8777,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Messenger"
-      ],
+      "categories": ["Messenger"],
       "description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core - much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
       "env": [
         {
@@ -9597,9 +8795,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/quassel-core-icon.png",
       "name": "quassel-core",
       "platform": "linux",
-      "ports": [
-        "4242:4242/tcp"
-      ],
+      "ports": ["4242:4242/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Quassel IRC",
       "type": 1,
@@ -9645,10 +8841,7 @@
           "description": "Custom CLI options for Quassel"
         }
       ],
-      "ports": [
-        "4242:4242/tcp",
-        "113:10113/tcp"
-      ],
+      "ports": ["4242:4242/tcp", "113:10113/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -9698,9 +8891,7 @@
           "description": "Specify a url-base in reverse proxy setups ie. `/quassel`"
         }
       ],
-      "ports": [
-        "64443:64443/tcp"
-      ],
+      "ports": ["64443:64443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -9713,16 +8904,11 @@
       "type": 1,
       "title": "RabbitMQ",
       "description": "Highly reliable enterprise messaging system",
-      "categories": [
-        "messaging"
-      ],
+      "categories": ["messaging"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/rabbitmq.png",
       "image": "rabbitmq:latest",
-      "ports": [
-        "5671/tcp",
-        "5672/tcp"
-      ],
+      "ports": ["5671/tcp", "5672/tcp"],
       "volumes": [
         {
           "container": "/var/lib/rabbitmq"
@@ -9758,9 +8944,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "7878:7878/tcp"
-      ],
+      "ports": ["7878:7878/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -9778,10 +8962,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders",
-        "Video"
-      ],
+      "categories": ["Downloaders", "Video"],
       "description": "Radarr - A fork of Sonarr to work with movies à la Couchpotato.",
       "env": [
         {
@@ -9799,9 +8980,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/radarr.png",
       "name": "radarr",
       "platform": "linux",
-      "ports": [
-        "7878:7878/tcp"
-      ],
+      "ports": ["7878:7878/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Radarr",
       "type": 1,
@@ -9849,9 +9028,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -9889,9 +9066,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3389:3389/tcp"
-      ],
+      "ports": ["3389:3389/tcp"],
       "volumes": [
         {
           "container": "/var/run/docker.sock",
@@ -9905,18 +9080,13 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
       "image": "amruthpillai/reactive-resume:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/reactiveresume.png",
       "name": "reactive-resume",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Reactive-Resume",
       "type": 1,
@@ -9931,15 +9101,11 @@
       "type": 1,
       "title": "Redis",
       "description": "Open-source in-memory data structure store",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/redis.png",
       "image": "redis:latest",
-      "ports": [
-        "6379/tcp"
-      ],
+      "ports": ["6379/tcp"],
       "volumes": [
         {
           "container": "/data"
@@ -9950,9 +9116,7 @@
       "type": 2,
       "title": "Redis Cluster",
       "description": "Open-source in-memory data structure store - Cluster mode",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/redis.png",
       "repository": {
@@ -9971,15 +9135,11 @@
       "title": "Redmine",
       "description": "Open-source project management tool",
       "note": "Default user and password are admin/admin",
-      "categories": [
-        "project-management"
-      ],
+      "categories": ["project-management"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/redmine.png",
       "image": "redmine:latest",
-      "ports": [
-        "3000/tcp"
-      ],
+      "ports": ["3000/tcp"],
       "volumes": [
         {
           "container": "/usr/src/redmine/files"
@@ -9990,15 +9150,11 @@
       "type": 1,
       "title": "Registry",
       "description": "Docker image registry",
-      "categories": [
-        "docker"
-      ],
+      "categories": ["docker"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
       "image": "registry:latest",
-      "ports": [
-        "5000/tcp"
-      ],
+      "ports": ["5000/tcp"],
       "volumes": [
         {
           "container": "/var/lib/registry"
@@ -10034,9 +9190,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10051,9 +9205,7 @@
       "name": "Requestrr",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/requestrr/config</p>",
       "description": "[Requestrr](https://github.com/darkalfx/requestrr) is a chatbot used to simplify using services like Sonarr/Radarr/Ombi via the use of chat.",
-      "categories": [
-        "Media"
-      ],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://github.com/darkalfx/requestrr/raw/master/Logos/requestrr_discord_Icon_512.png",
       "image": "linuxserver/requestrr:latest",
@@ -10077,9 +9229,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "4545:4545/tcp"
-      ],
+      "ports": ["4545:4545/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10089,12 +9239,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Backup",
-        "Cloud",
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Backup", "Cloud", "Other", "Tools"],
       "description": "Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
       "env": [
         {
@@ -10158,10 +9303,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8888:8888/tcp",
-        "55555:55555/tcp"
-      ],
+      "ports": ["8888:8888/tcp", "55555:55555/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10207,9 +9349,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10227,9 +9367,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders"
-      ],
+      "categories": ["Downloaders"],
       "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
       "env": [
         {
@@ -10247,10 +9385,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sabnzbd-icon.png",
       "name": "sabnzbd",
       "platform": "linux",
-      "ports": [
-        "8080:8080/tcp",
-        "9090:9090/tcp"
-      ],
+      "ports": ["8080:8080/tcp", "9090:9090/tcp"],
       "restart_policy": "unless-stopped",
       "title": "SABnzbd",
       "type": 1,
@@ -10273,16 +9408,12 @@
       "type": 1,
       "title": "SQL Server",
       "description": "Microsoft SQL Server on Linux",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "linux",
       "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
       "image": "mcr.microsoft.com/mssql/server:2019-latest",
-      "ports": [
-        "1433/tcp"
-      ],
+      "ports": ["1433/tcp"],
       "env": [
         {
           "name": "ACCEPT_EULA",
@@ -10299,16 +9430,12 @@
       "type": 1,
       "title": "SQL Server",
       "description": "Microsoft SQL Server Developer for Windows containers",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "windows",
       "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
       "image": "microsoft/mssql-server-windows-developer:latest",
-      "ports": [
-        "1433/tcp"
-      ],
+      "ports": ["1433/tcp"],
       "env": [
         {
           "name": "ACCEPT_EULA",
@@ -10330,16 +9457,12 @@
       "type": 1,
       "title": "SQL Server Express",
       "description": "Microsoft SQL Server Express for Windows containers",
-      "categories": [
-        "database"
-      ],
+      "categories": ["database"],
       "platform": "windows",
       "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
       "image": "microsoft/mssql-server-windows-express:latest",
-      "ports": [
-        "1433/tcp"
-      ],
+      "ports": ["1433/tcp"],
       "env": [
         {
           "name": "ACCEPT_EULA",
@@ -10386,9 +9509,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10409,15 +9530,11 @@
       "type": 1,
       "title": "Scality S3",
       "description": "Standalone AWS S3 protocol server",
-      "categories": [
-        "storage"
-      ],
+      "categories": ["storage"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/scality-s3.png",
       "image": "scality/s3server",
-      "ports": [
-        "8000/tcp"
-      ],
+      "ports": ["8000/tcp"],
       "env": [
         {
           "name": "SCALITY_ACCESS_KEY",
@@ -10484,9 +9601,7 @@
           "description": "# optional - Run the metrics collector."
         }
       ],
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10503,10 +9618,7 @@
       "type": 1,
       "title": "Sematext Docker Agent",
       "description": "Collect logs, metrics and docker events",
-      "categories": [
-        "Log Management",
-        "Monitoring"
-      ],
+      "categories": ["Log Management", "Monitoring"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/sematext_agent.png",
       "image": "sematext/sematext-agent-docker:latest",
@@ -10532,10 +9644,7 @@
     {
       "title": "Sematext Docker Agent",
       "type": 2,
-      "categories": [
-        "Log Management",
-        "Monitoring"
-      ],
+      "categories": ["Log Management", "Monitoring"],
       "description": "Collect logs, metrics and docker events",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/sematext_agent.png",
       "platform": "linux",
@@ -10555,18 +9664,13 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
       "image": "radhifadlillah/shiori:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/shiori-icon.png",
       "name": "shiori",
       "platform": "linux",
-      "ports": [
-        "8080/tcp"
-      ],
+      "ports": ["8080/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Shiori",
       "type": 1,
@@ -10578,10 +9682,7 @@
       ]
     },
     {
-      "categories": [
-        "Downloaders",
-        "Video"
-      ],
+      "categories": ["Downloaders", "Video"],
       "description": "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
       "env": [
         {
@@ -10599,9 +9700,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sickchill-icon.png",
       "name": "sickchill",
       "platform": "linux",
-      "ports": [
-        "8081:8081/tcp"
-      ],
+      "ports": ["8081:8081/tcp"],
       "restart_policy": "unless-stopped",
       "title": "SickChill",
       "type": 1,
@@ -10621,10 +9720,7 @@
       ]
     },
     {
-      "categories": [
-        "Downloaders",
-        "Video"
-      ],
+      "categories": ["Downloaders", "Video"],
       "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.",
       "env": [
         {
@@ -10642,9 +9738,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sickgear-icon.png",
       "name": "sickgear",
       "platform": "linux",
-      "ports": [
-        "8081:8081/tcp"
-      ],
+      "ports": ["8081:8081/tcp"],
       "restart_policy": "unless-stopped",
       "title": "SickGear",
       "type": 1,
@@ -10692,9 +9786,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8081:8081/tcp"
-      ],
+      "ports": ["8081:8081/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10740,9 +9832,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8081:8081/tcp"
-      ],
+      "ports": ["8081:8081/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10760,9 +9850,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Management"
-      ],
+      "categories": ["Management"],
       "description": "SmokePing is a latency logging and graphing and alerting system. It consists of a daemon process which organizes the latency measurements and a CGI which presents the graphs.",
       "env": [
         {
@@ -10780,9 +9868,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/smokeping-icon.png",
       "name": "smokeping",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "SmokePing",
       "type": 1,
@@ -10826,9 +9912,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10870,10 +9954,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp",
-        "443:443/tcp"
-      ],
+      "ports": ["80:80/tcp", "443:443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10883,19 +9964,14 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Self-hosted snippet manager.",
       "image": "snowmean/snibox-sqlite:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/snibox.png",
       "name": "Snibox",
       "note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text.",
       "platform": "linux",
-      "ports": [
-        "3010:3000/tcp"
-      ],
+      "ports": ["3010:3000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Snibox",
       "type": 1,
@@ -10971,9 +10047,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8080:80/tcp"
-      ],
+      "ports": ["8080:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -10986,15 +10060,11 @@
       "type": 1,
       "title": "Solr",
       "description": "Open-source enterprise search platform",
-      "categories": [
-        "search-engine"
-      ],
+      "categories": ["search-engine"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/solr.png",
       "image": "solr:latest",
-      "ports": [
-        "8983/tcp"
-      ],
+      "ports": ["8983/tcp"],
       "volumes": [
         {
           "container": "/opt/solr/mydata"
@@ -11007,9 +10077,7 @@
       "name": "Sonarr",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/sonarr/config<br>mkdir -p /volume1/docker/sonarr/tv<br>mkdir -p /volume1/docker/sonarr/downloads</p>",
       "description": "[Sonarr](https://sonarr.tv/) (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
-      "categories": [
-        "Media"
-      ],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-banner.png",
       "image": "linuxserver/sonarr:latest",
@@ -11033,9 +10101,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8989:8989/tcp"
-      ],
+      "ports": ["8989:8989/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -11053,10 +10119,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders",
-        "Video"
-      ],
+      "categories": ["Downloaders", "Video"],
       "description": "Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
       "env": [
         {
@@ -11074,9 +10137,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sonarr-icon.png",
       "name": "sonarr",
       "platform": "linux",
-      "ports": [
-        "8989:8989/tcp"
-      ],
+      "ports": ["8989:8989/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Sonarr",
       "type": 1,
@@ -11128,9 +10189,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -11228,10 +10287,7 @@
           "description": "Set to `true` to retrieve certs in staging mode. Rate limits will be much higher, but the resulting cert will not pass the browser's security test. Only to be used for testing purposes."
         }
       ],
-      "ports": [
-        "443:443/tcp",
-        "80:80/tcp"
-      ],
+      "ports": ["443:443/tcp", "80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -11241,12 +10297,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Backup",
-        "Cloud",
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Backup", "Cloud", "Other", "Tools"],
       "description": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes.",
       "env": [
         {
@@ -11264,11 +10315,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/syncthing-icon.png",
       "name": "syncthing",
       "platform": "linux",
-      "ports": [
-        "8384:8384/tcp",
-        "21027:21027/udp",
-        "22000:22000/tcp"
-      ],
+      "ports": ["8384:8384/tcp", "21027:21027/udp", "22000:22000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "SyncThing",
       "type": 1,
@@ -11317,9 +10364,7 @@
           "description": "DEPRECATED - (Still works but will be removed in the future in favor of the built-in var `autojoin__room`) - Set the room name for auto joining (requires `AUTOJOIN_ENABLED` set to `true`)."
         }
       ],
-      "ports": [
-        "8088:8088/tcp"
-      ],
+      "ports": ["8088:8088/tcp"],
       "restart_policy": "unless-stopped"
     },
     {
@@ -11379,9 +10424,7 @@
       "name": "Syslog-ng",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/syslog-ng/config<br></p>",
       "description": "[syslog-ng](https://www.syslog-ng.com/products/open-source-log-management/) allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.",
-      "categories": [
-        "System Tools"
-      ],
+      "categories": ["System Tools"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png",
       "image": "linuxserver/syslog-ng:latest",
@@ -11405,11 +10448,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "514:5514/udp",
-        "601:6601/tcp",
-        "6514:6514/tcp"
-      ],
+      "ports": ["514:5514/udp", "601:6601/tcp", "6514:6514/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -11431,9 +10470,7 @@
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/Taisun-Docker/taisun/master/public/favicon/apple-icon-180x180.png",
       "image": "linuxserver/taisun:latest",
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/var/run/docker.sock",
@@ -11471,9 +10508,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "8181:8181/tcp"
-      ],
+      "ports": ["8181:8181/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -11483,10 +10518,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.",
       "env": [
         {
@@ -11505,9 +10537,7 @@
       "name": "tautulli",
       "note": "<b>Port 8181</b> The webui for Tautulli's webui<br/></br>Configuration <ul><li><b>/config</b> - Storing Configuration and the Tautulli database</li><li><b>/logs</b> - Map to you plex logs (required for IP logging)</li></ul>",
       "platform": "linux",
-      "ports": [
-        "8181:8181/tcp"
-      ],
+      "ports": ["8181:8181/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Tautulli",
       "type": 1,
@@ -11523,9 +10553,7 @@
       ]
     },
     {
-      "categories": [
-        "Messenger"
-      ],
+      "categories": ["Messenger"],
       "description": "A self-hosted web IRC client.",
       "env": [
         {
@@ -11543,9 +10571,7 @@
       "logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
       "name": "thelounge",
       "platform": "linux",
-      "ports": [
-        "9000:9000/tcp"
-      ],
+      "ports": ["9000:9000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "TheLounge",
       "type": 1,
@@ -11585,9 +10611,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "9000:9000/tcp"
-      ],
+      "ports": ["9000:9000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -11597,18 +10621,13 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "A unique, non-linear notebook wiki.",
       "image": "mazzolino/tiddlywiki:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/tiddlywiki.png",
       "name": "tiddlywiki",
       "platform": "linux",
-      "ports": [
-        "8080:8080/tcp"
-      ],
+      "ports": ["8080:8080/tcp"],
       "restart_policy": "unless-stopped",
       "title": "TiddlyWiki",
       "type": 1,
@@ -11620,9 +10639,7 @@
       ]
     },
     {
-      "categories": [
-        "Other"
-      ],
+      "categories": ["Other"],
       "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
       "env": [
         {
@@ -11640,9 +10657,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/tt-rss-icon.png",
       "name": "tt-rss",
       "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
+      "ports": ["80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Tiny Tiny RSS",
       "type": 1,
@@ -11718,11 +10733,7 @@
           "description": "Specify an optional list of comma separated dns name whitelist. Fills rpc-host-whitelist setting."
         }
       ],
-      "ports": [
-        "9091:9091/tcp",
-        "51413:51413/tcp",
-        "51413:51413/udp"
-      ],
+      "ports": ["9091:9091/tcp", "51413:51413/tcp", "51413:51413/udp"],
       "volumes": [
         {
           "container": "/config",
@@ -11740,9 +10751,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders"
-      ],
+      "categories": ["Downloaders"],
       "description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
       "env": [
         {
@@ -11760,10 +10769,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/transmission-icon.png",
       "name": "transmission",
       "platform": "linux",
-      "ports": [
-        "9091:9091/tcp",
-        "51413:51413/tcp"
-      ],
+      "ports": ["9091:9091/tcp", "51413:51413/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Transmission",
       "type": 1,
@@ -11782,11 +10788,7 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "VPN",
-        "Tools"
-      ],
+      "categories": ["Other", "VPN", "Tools"],
       "description": "This container contains OpenVPN and Transmission with a configuration where Transmission is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
       "env": [
         {
@@ -11826,9 +10828,7 @@
       "name": "transmission-openvpn",
       "note": "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
       "platform": "linux",
-      "ports": [
-        "9091:9091/tcp"
-      ],
+      "ports": ["9091:9091/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Transmission-OpenVPN",
       "type": 1,
@@ -11878,10 +10878,7 @@
           "description": "Optionally specify additional arguments to be passed. See Additional runtime parameters."
         }
       ],
-      "ports": [
-        "9981:9981/tcp",
-        "9982:9982/tcp"
-      ],
+      "ports": ["9981:9981/tcp", "9982:9982/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -11895,10 +10892,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Video",
-        "Other"
-      ],
+      "categories": ["Video", "Other"],
       "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&gt;IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&gt;IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
       "env": [
         {
@@ -11916,10 +10910,7 @@
       "logo": "http://i.imgur.com/zGSUAT4.png",
       "name": "tvheadend",
       "platform": "linux",
-      "ports": [
-        "9981:9981/tcp",
-        "9982:9982/tcp"
-      ],
+      "ports": ["9981:9981/tcp", "9982:9982/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Tvheadend",
       "type": 1,
@@ -11968,10 +10959,7 @@
           "description": "To set the maximum memory. ( ex: set '1024' for 1GB )"
         }
       ],
-      "ports": [
-        "2202:2202/tcp",
-        "2203:2203/tcp"
-      ],
+      "ports": ["2202:2202/tcp", "2203:2203/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -11993,10 +10981,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Cloud",
-        "Books"
-      ],
+      "categories": ["Cloud", "Books"],
       "description": "Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
       "env": [
         {
@@ -12019,10 +11004,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ubooquity-icon.png",
       "name": "ubooquity",
       "platform": "linux",
-      "ports": [
-        "2202:2202/tcp",
-        "2203:2203/tcp"
-      ],
+      "ports": ["2202:2202/tcp", "2203:2203/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Ubooquity",
       "type": 1,
@@ -12042,9 +11024,7 @@
       "type": 1,
       "title": "Ubuntu",
       "description": "Debian-based Linux operating system",
-      "categories": [
-        "operating-system"
-      ],
+      "categories": ["operating-system"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ubuntu.png",
       "image": "ubuntu:latest",
@@ -12052,10 +11032,7 @@
       "command": "/bin/bash"
     },
     {
-      "categories": [
-        "Management",
-        "Tools"
-      ],
+      "categories": ["Management", "Tools"],
       "description": "The Unifi-controller Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
       "env": [
         {
@@ -12099,9 +11076,7 @@
       "name": "Unifi-controller",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/unifi-controller/config</p>",
       "description": "The [Unifi-controller](https://www.ubnt.com/enterprise/#unifi) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
-      "categories": [
-        "Networking"
-      ],
+      "categories": ["Networking"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png",
       "image": "linuxserver/unifi-controller:latest",
@@ -12157,19 +11132,14 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
       "image": "vaultwarden/server:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/bitwarden.png",
       "name": "vaultwarden",
       "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
       "platform": "linux",
-      "ports": [
-        ":80/tcp"
-      ],
+      "ports": [":80/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Vaultwarden",
       "type": 1,
@@ -12181,11 +11151,7 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "Tools",
-        "Maintenance"
-      ],
+      "categories": ["Other", "Tools", "Maintenance"],
       "description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
       "image": "containrrr/watchtower:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/watchtower.png",
@@ -12203,9 +11169,7 @@
       ]
     },
     {
-      "categories": [
-        "Downloaders"
-      ],
+      "categories": ["Downloaders"],
       "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
       "env": [
         {
@@ -12285,9 +11249,7 @@
       "name": "Webtop",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/webtop/config<br></p>",
       "description": "[Webtop](https://github.com/linuxserver/gclient) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.",
-      "categories": [
-        "Utilities"
-      ],
+      "categories": ["Utilities"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png",
       "image": "linuxserver/webtop:latest",
@@ -12323,9 +11285,7 @@
           "description": "See the keyboard layouts section for more information and options."
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -12339,18 +11299,13 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
       "image": "benbusby/whoogle-search:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/whoogle.png",
       "name": "whoogle",
       "platform": "linux",
-      "ports": [
-        "5001:5000/tcp"
-      ],
+      "ports": ["5001:5000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Whoogle",
       "type": 1,
@@ -12390,9 +11345,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -12406,18 +11359,13 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
       "image": "linuxserver/wikijs:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/wikijs.png",
       "name": "Wikijs",
       "platform": "linux",
-      "ports": [
-        "3100:3000/tcp"
-      ],
+      "ports": ["3100:3000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Wikijs",
       "type": 1,
@@ -12503,9 +11451,7 @@
           "description": "Generated QR codes will be displayed in the docker log. Set to `false` to skip log output."
         }
       ],
-      "ports": [
-        "51820:51820/udp"
-      ],
+      "ports": ["51820:51820/udp"],
       "volumes": [
         {
           "container": "/config",
@@ -12548,9 +11494,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "3000:3000/tcp"
-      ],
+      "ports": ["3000:3000/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -12564,9 +11508,7 @@
       "title": "WordPress",
       "description": "WordPress setup with a MySQL database",
       "note": "Deploys a WordPress instance connected to a MySQL database.",
-      "categories": [
-        "CMS"
-      ],
+      "categories": ["CMS"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
       "repository": {
@@ -12586,9 +11528,7 @@
       "title": "WordPress",
       "description": "WordPress setup with a MySQL database",
       "note": "Deploys a WordPress instance connected to a MySQL database.",
-      "categories": [
-        "CMS"
-      ],
+      "categories": ["CMS"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
       "repository": {
@@ -12639,10 +11579,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp",
-        "443:443/tcp"
-      ],
+      "ports": ["80:80/tcp", "443:443/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -12652,18 +11589,13 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools"
-      ],
+      "categories": ["Other", "Tools"],
       "description": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app store for servers that anyone can make packages for.",
       "image": "selfhostedpro/yacht:latest",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
       "name": "yacht",
       "platform": "linux",
-      "ports": [
-        "8001:8000/tcp"
-      ],
+      "ports": ["8001:8000/tcp"],
       "restart_policy": "unless-stopped",
       "title": "Yacht",
       "type": 1,
@@ -12679,18 +11611,13 @@
       ]
     },
     {
-      "categories": [
-        "Other",
-        "Downloaders"
-      ],
+      "categories": ["Other", "Downloaders"],
       "description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
       "image": "tzahi12345/youtubedl-material:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ytdlm.png",
       "name": "youtubedl-material",
       "platform": "linux",
-      "ports": [
-        "17442:17442/tcp"
-      ],
+      "ports": ["17442:17442/tcp"],
       "restart_policy": "unless-stopped",
       "title": "YouTubeDL-Material",
       "type": 1,
@@ -12746,9 +11673,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "80:80/tcp"
-      ],
+      "ports": ["80:80/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -12758,9 +11683,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Messenger"
-      ],
+      "categories": ["Messenger"],
       "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
       "env": [
         {
@@ -12778,9 +11701,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/znc-icon.png",
       "name": "znc",
       "platform": "linux",
-      "ports": [
-        "6501:6501/tcp"
-      ],
+      "ports": ["6501:6501/tcp"],
       "restart_policy": "unless-stopped",
       "title": "ZNC",
       "type": 1,
@@ -12820,9 +11741,7 @@
           "description": "Specify a timezone to use for example Europe/Amsterdam"
         }
       ],
-      "ports": [
-        "6501:6501/tcp"
-      ],
+      "ports": ["6501:6501/tcp"],
       "volumes": [
         {
           "container": "/config",
@@ -12832,9 +11751,7 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Downloaders"
-      ],
+      "categories": ["Downloaders"],
       "description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
       "env": [
         {
@@ -12852,11 +11769,7 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/qbittorrent-icon.png",
       "name": "qbittorrent",
       "platform": "linux",
-      "ports": [
-        "6881:6881/tcp",
-        "6881:6881/udp",
-        "8080:8080/tcp"
-      ],
+      "ports": ["6881:6881/tcp", "6881:6881/udp", "8080:8080/tcp"],
       "restart_policy": "unless-stopped",
       "title": "qBittorrent",
       "type": 1,
@@ -12872,9 +11785,7 @@
       ]
     },
     {
-      "categories": [
-        "Downloaders"
-      ],
+      "categories": ["Downloaders"],
       "description": "Popular torrent client with a webui for ease of use.",
       "env": [
         {
@@ -12892,11 +11803,7 @@
       "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
       "name": "rutorrent",
       "platform": "linux",
-      "ports": [
-        "80/tcp",
-        "51413:51413/tcp",
-        "6881:6881/udp"
-      ],
+      "ports": ["80/tcp", "51413:51413/tcp", "6881:6881/udp"],
       "restart_policy": "unless-stopped",
       "title": "ruTorrent",
       "type": 1,
