@@ -2661,86 +2661,17 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Video",
-        "Music",
-        "Photos"
-      ],
-      "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        },
-        {
-          "label": "TZ",
-          "name": "TZ"
-        }
-      ],
-      "image": "linuxserver/emby:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/emby.png",
-      "name": "Emby",
-      "platform": "linux",
-      "ports": [
-        "8096:8096/tcp",
-        "8920:8920/tcp"
-      ],
-      "restart_policy": "unless-stopped",
-      "title": "Emby",
       "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/Emby",
-          "container": "/config"
-        },
-        {
-          "bind": "/portainer/TV",
-          "container": "/data/tvshows"
-        },
-        {
-          "bind": "/portainer/Movies",
-          "container": "/data/movies"
-        }
-      ]
-    },
-    {
+      "title": "EmbyStat",
+      "name": "EmbyStat",
       "categories": [
         "Other",
         "Tools"
       ],
-      "description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
-      "image": "linuxserver/embystat:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/embystat.png",
-      "name": "EmbyStat",
-      "note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services.",
-      "platform": "linux",
-      "ports": [
-        "6555:6555/tcp"
-      ],
-      "restart_policy": "unless-stopped",
-      "title": "EmbyStat",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/EmbyStat",
-          "container": "/config"
-        }
-      ]
-    },
-    {
-      "type": 1,
-      "title": "Embystat",
-      "name": "Embystat",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/embystat/config</p>",
       "description": "[Embystat](https://github.com/mregni/EmbyStat) is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/embystat-logo.png",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/embystat.png",
       "image": "linuxserver/embystat:latest",
       "env": [
         {
@@ -3518,6 +3449,11 @@
       "type": 1,
       "title": "Grocy",
       "name": "Grocy",
+      "categories": [
+        "Other",
+        "Tools",
+        "Finance"
+      ],
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/grocy/config</p>",
       "description": "[Grocy](https://github.com/grocy/grocy) is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utility. Keep track of your purchases, how much food you are wasting, what chores need doing and what batteries need charging with this proudly Open Source tool For more information on grocy visit their website and check it out: https://grocy.info",
       "platform": "linux",
@@ -3555,73 +3491,13 @@
       "restart_policy": "unless-stopped"
     },
     {
-      "categories": [
-        "Other",
-        "Tools",
-        "Finance"
-      ],
-      "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utility.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        },
-        {
-          "label": "Timezone",
-          "name": "TZ"
-        }
-      ],
-      "image": "linuxserver/grocy:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/grocy_logo.png",
-      "name": "grocy",
-      "platform": "linux",
-      "ports": [
-        "80/tcp"
-      ],
-      "restart_policy": "unless-stopped",
-      "title": "Grocy",
       "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/Grocy",
-          "container": "/config"
-        }
-      ]
-    },
-    {
+      "title": "Guacamole",
+      "name": "Guacamole",
       "categories": [
         "Other",
         "Tools"
       ],
-      "description": "A clientless remote desktop gateway.",
-      "image": "oznu/guacamole:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/guacamole.png",
-      "name": "guacamole",
-      "note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
-      "platform": "linux",
-      "ports": [
-        "8080:8080/tcp"
-      ],
-      "restart_policy": "unless-stopped",
-      "title": "Guacamole",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/Guacamole",
-          "container": "/config"
-        }
-      ]
-    },
-    {
-      "type": 1,
-      "title": "Guacd",
-      "name": "Guacd",
       "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
       "description": "[Guacd](https://guacamole.apache.org/) - Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH. This container is only the backend server component needed to use The official or 3rd party HTML5 frontends.",
       "platform": "linux",
