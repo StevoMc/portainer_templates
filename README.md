@@ -9,4 +9,4 @@ This will create the "template_all.json" file.
 
 ## For usage
 
-Use "template_sorted" might not be up to date but has no duplicates.
+Use ["template_sorted"](https://raw.githubusercontent.com/StevoMc/portainer_templates/main/template_sorted.json) might not be up to date but has no duplicates.
